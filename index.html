@@ -1,0 +1,2823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Automate Your IVF Clinic</title>
+  <meta name="description"
+    content="IVF Clinic Management Software: LifeLinkr is one of the leading software to manage your patient records with customization for all your clinics. Try Demo Today">
+  <meta name="keywords" content="IVF Clinic Management Software">
+  <link rel="canonical" href="https://abhishekbakshi.in/" />
+  <meta name="robots" content="index,follow">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Automate Your IVF Clinic">
+  <meta property="og:description"
+    content="IVF Clinic Management Software: LifeLinkr is one of the leading software to manage your patient records with customization for all your clinics. Try Demo Today">
+  <meta property="og:image" content="https://lifelinkr.com/his-software/lp/v1/og.jpg">
+  <meta property="og:image:secure_url" content="https://lifelinkr.com/his-software/lp/v1/og.jpg">
+  <meta property="og:image:width" content="640">
+  <meta property="og:image:height" content="480">
+  <link href="images/favicon.png" rel="icon">
+  <link href="images/favicon.png" rel="apple-touch-icon">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+
+  <link rel="preconnect" href="https://www.googletagmanager.com">
+
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-K3MZPQ8T');</script>
+  <!-- End Google Tag Manager -->
+
+</head>
+
+<body>
+
+
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3MZPQ8T" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+
+
+  <!-- End Google Tag Manager (noscript) -->
+
+
+
+  <!-- Calendly POPUP -->
+
+  <div class="popUpCalendly">
+    <div class="popup_cal_scheduler-container">
+      <div class="close_calendly"><img src="./datePickerImg/cross.png" alt=""></div>
+      <div class="popup_cal_left-panel">
+        <div class="previous_btn_popup">
+          <img src="./datePickerImg/up-arrow.png" alt="" />
+        </div>
+        <div class="popup_cal_logo">
+          <img src="./datePickerImg/ll-new.png" alt="" width="200" />
+        </div>
+        <div class="meeting_detail">
+          <!-- <div class="popup_cal_company-name">The Group Three</div> -->
+          <div class="popup_cal_meeting-title">Schedule Your Demo</div>
+          <div class="popup_cal_duration time_date_info hide-in-mbl">
+            <img src="./datePickerImg/clock.png" alt="" />
+            <div class="time_display">10:00 Pm</div>
+          </div>
+          <div class="time_date_info hide-in-mbl">
+            <img src="./datePickerImg/calendar (1).png" alt="" />
+            <div class="popup_cal_selected-date">Friday, December 20</div>
+          </div>
+
+          <div class="time_date_info hide-in-mbl" style="padding-left: 1px;">
+            <img src="./datePickerImg/planet-earth.png" alt="" />
+            Indian Standard Time
+          </div>
+        </div>
+      </div>
+
+      <div class="right_container_modal">
+        <div class="popup_cal_right-panel">
+          <div class="popup_cal_calendar-section">
+
+            <div class="">
+              <div class="popup_cal_main-header hide-in-mbl">
+                <h2>Select a Date & Time</h2>
+              </div>
+
+              <div class="cal_time d-flex">
+                <div class="popup_cal_calendar">
+                  <div class="popup_cal_month-selector">
+                    <button id="popup_cal_prev-month">
+                      <img src="./datePickerImg/left-arrow.png" alt="" />
+                    </button>
+                    <div id="popup_cal_current-month">December 2024</div>
+                    <button id="popup_cal_next-month">
+                      <img src="./datePickerImg/right-arrow.png" alt="" />
+                    </button>
+                  </div>
+                  <div class="popup_cal_weekdays">
+                    <div>MON</div>
+                    <div>TUE</div>
+                    <div>WED</div>
+                    <div>THU</div>
+                    <div>FRI</div>
+                    <div>SAT</div>
+                    <div>SUN</div>
+                  </div>
+                  <div class="popup_cal_days" id="popup_cal_calendar-days"></div>
+                  <div class="popup_cal_timezone-selector">
+                    <p>Time Zone</p>
+                    <div class="time_option">
+                      <img src="./datePickerImg/globe-earth.png" alt="" />
+                      <select>
+                        <option>Indian Standard Time</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="right_time_container">
+                  <div class="popup_cal_selected-date">
+                    Friday, December 20
+                  </div>
+                  <!-- <div class="popup_cal_time-slots-section">
+                    <div class="popup_cal_button-group">
+                      <div class="popup_cal_time-slot-selected">08:30PM</div>
+                      <button class="popup_cal_next-button">Next</button>
+                    </div>
+                    <div class="popup_cal_button-group">
+                      <div class="popup_cal_time-slot-selected">09:00PM</div>
+                      <button class="popup_cal_next-button">Next</button>
+                    </div>
+                    <div class="popup_cal_button-group">
+                      <div class="popup_cal_time-slot-selected">10:00PM</div>
+                      <button class="popup_cal_next-button">Next</button>
+                    </div>
+                    <div class="popup_cal_button-group">
+                      <div class="popup_cal_time-slot-selected">10:30PM</div>
+                      <button class="popup_cal_next-button">Next</button>
+                    </div>
+                    <div class="popup_cal_button-group">
+                      <div class="popup_cal_time-slot-selected">11:00PM</div>
+                      <button class="popup_cal_next-button">Next</button>
+                    </div>
+                    <div class="popup_cal_button-group">
+                      <div class="popup_cal_time-slot-selected">11:30PM</div>
+                      <button class="popup_cal_next-button">Next</button>
+                    </div>
+                    <div class="popup_cal_button-group">
+                      <div class="popup_cal_time-slot-selected">12:00PM</div>
+                      <button class="popup_cal_next-button">Next</button>
+                    </div>
+                    <div class="popup_cal_button-group">
+                      <div class="popup_cal_time-slot-selected">12:30PM</div>
+                      <button class="popup_cal_next-button">Next</button>
+                    </div>
+                    <div class="popup_cal_button-group">
+                      <div class="popup_cal_time-slot-selected">01:00PM</div>
+                      <button class="popup_cal_next-button">Next</button>
+                    </div>
+                    <div class="popup_cal_button-group">
+                      <div class="popup_cal_time-slot-selected">01:30PM</div>
+                      <button class="popup_cal_next-button">Next</button>
+                    </div>
+                  </div> -->
+                  <div class="popup_cal_time-slots-section">
+                    <div class="no_slots_div">
+                      <div class="time_img">
+                          <img src="./images/back-in-time.png" alt="">
+                      </div>
+                      <div class="time_text">
+                          <h4>Oops!</h4>
+                          <p>No Slots are Available.</p>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <!-- ===form== -->
+        <form class="popupForm" action="mail/mail6.php" method="post">
+
+          <input type="text" name="selected_date" class="selected_date_Input" hidden style="display: none;">
+          <input type="text" name="selected_time" class="selected_time_Input" hidden style="display: none;">
+
+          <div class="heading">
+            <h2>Enter Details</h2>
+          </div>
+          <div class="form_content">
+            <div class="name_field">
+              <div class="input_field_row">
+                <!-- <label for="name">Name*</label> -->
+                <input type="text" placeholder="Name*" name="name" required />
+              </div>
+              <div class="input_field_row">
+                <!-- <label for="name">Email*</label> -->
+                <input type="text" placeholder="Email*" name="email" required />
+              </div>
+            </div>
+            <div class="email_field">
+              <div class="input_field_row">
+                <!-- <label for="name">Phone*</label> -->
+                <input type="text" placeholder="Phone*" name="phone" required />
+              </div>
+              <div class="input_field_row">
+                <!-- <label for="name">Clinic Name*</label> -->
+                <input type="text" placeholder="Clinic Name*" name="clinic_name" required />
+              </div>
+              <!-- <div class="add_guest">Add Guest</div> -->
+            </div>
+
+            <div class="email_field">
+              <div class="input_field_row">
+                <!-- <label for="name">City</label> -->
+                <input type="text" placeholder="City" name="city" />
+              </div>
+              <div class="input_field_row">
+                <!-- <label for="name">Currently Using Software?</label> -->
+                <!-- <input type="text" placeholder="Currently Using Software?" name="is_using_software" /> -->
+                <select class="form-control mb-3" name="is_using_software" required>
+                  <option value="" disabled selected>Currently Using Any Software?</option>
+                  <option value="yes">Yes</option>
+                  <option value="no">No</option>
+                </select>
+              </div>
+              <!-- <div class="add_guest">Add Guest</div> -->
+            </div>
+            <div class="email_field">
+              <div class="input_field_row">
+                <!-- <label for="name">Message</label> -->
+                <!-- <input type="text" placeholder="Write Your Message.." name="message" /> -->
+                <textarea name="message" rows="4" placeholder="Write Your Message..." id=""></textarea>
+              </div>
+
+              <!-- <div class="add_guest">Add Guest</div> -->
+            </div>
+            <div class="email_field">
+              <div class="input_field_row" id="add_guestInput">
+                <label for="name">Guest Email</label>
+                <div id="email-container" class="email-input-container">
+                  <input type="text" name="invities" id="email-input" placeholder="Add Guest Emails"
+                    class="email-input" />
+                </div>
+              </div>
+              <div class="add_guest">Add Invities Emails</div>
+            </div>
+            <!-- <div class="message_field">
+          <label>Please share anything that will help prepare for our
+            meeting.</label>
+          <textarea name="message" rows="2" id=""></textarea>
+        </div> -->
+            <!-- <div class="footer_text">
+          By proceeding, you confirm that you have read and agree to
+          Calendly's Terms of Use and Privacy Notice.
+        </div> -->
+            <button type="submit" name="submit">Schedule Demo</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Calendly POPUP -->
+
+
+
+
+
+
+
+  <div class="OnLeaveCard">
+    <div class="Card">
+      <div class="heading">
+        Schedule a Free Call Back
+      </div>
+      <div class="input">
+        <form action="mail/mail3.php" method="post" id="Call_Back_NO" class="form">
+          <input type="text" name="mbl_no2" class="User_Number" placeholder="Enter Your Phone Number" pattern="[6-9][0-9]{9}" required=""
+            fdprocessedid="trb66n">
+          <button class="Call_MeBtn" name="submit_new2" type="submit" fdprocessedid="yewyte">CALL ME BACK</button>
+        </form>
+      </div>
+      <div class="no_thanks_btn">
+        <button class="No_ThanksBtn" fdprocessedid="1qxi5u"><a href="/">No Thanks</a></button>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- 
+=======================================
+? => Header 
+=======================================
+-->
+
+  <header id="header" class="fixed-top">
+
+    <div class="container flex_between">
+      <h3 class="logo">
+        <a href="/">
+          <img loading="lazy" src="./images/logo.webp" alt="Logo" width="200px" height="75px">
+        </a>
+      </h3>
+      <h3 class="logo_mbl">
+        <a href="/">
+          <img class="logo_img" loading="lazy" src="./images/log-mbl-ll.webp" alt="Logo" width="" height="55px">
+
+        </a>
+      </h3>
+
+      <!-- ---toggle icon---- -->
+      <div class="toggle_icon">
+        <img src="./images/menu.svg" id="toggle_img" alt="menu" width="25px" height="25px">
+      </div>
+      <nav id="navbar" class="navbar flex_between">
+        <ul>
+          <li class="hide"><a class="nav-link scrollto menu-btn flex_between" href="\">Home</a></li>
+          <li class="hide"><a class="nav-link scrollto menu-btn flex_between" href="#choose">Why Choose Us</a></li>
+          <li class="hide"><a class="nav-link scrollto menu-btn flex_between" href="#benefits">Benefits</a></li>
+          <!-- <li class="hide"><a class="nav-link scrollto menu-btn flex_between" href="#people">Reviews</a></li> -->
+          <li class="hide"><a class="nav-link scrollto menu-btn flex_between" href="#faq">FAQs</a></li>
+          <li class="whats" id="whatsappButton"><a
+              href="https://api.whatsapp.com/send?phone=919999854243&text=Hi,%20I%20need%20a%20demo%20of%20your%20IVF%20management%20software%20for%20my%20IVF%20clinic.%20Thanks"
+              class="nav-link scrollto register-now pay-btn">
+              WhatsApp Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <nav id="mobile_navbar">
+      <ul class="mobile_navbar_ul">
+        <li class="mobile_menu_btns"><a class="nav-link scrollto menu-btn" href="#benefits">Benefits</a>
+        </li>
+        <li class="mobile_menu_btns"><a class="nav-link scrollto menu-btn" href="#choose">Why Choose Us</a></li>
+        <!-- <li class="mobile_menu_btns"><a class="nav-link scrollto menu-btn" href="#reviews">Reviews</a></li> -->
+        <li class="mobile_menu_btns"><a class="nav-link scrollto menu-btn" href="#faq">FAQs</a></li>
+        <li class="mobile_menu_btns call_for_btn_li"><a href="tel:+91 9999854243"
+            class="nav-link scrollto register-now call_btn_navbar pay-btn">
+            Call For Consultation</a>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <!--    
+     =================================== 
+                main section start
+    ====================================
+    -->
+
+  <main id="home">
+    <section id="hero" class="d-flex align-items-center">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 pt-4 first_section_container">
+            <h1><strong>Automate Your IVF Clinic</strong></h1>
+            <!-- <img src="https://www.abhishekbakshi.in/himanshu/im/img/iv-therapy.jpg" alt="" height="230px"> -->
+
+            <h2>Your All-in-One Software for Enhanced IVF Clinic Management and Patient Experience </h2>
+
+            <div class="Ll-Benefits-Container">
+              <div class="Ll-Benefits-Container">
+                <div class="benefits_grid_list grid col-2 Benefits-Lists">
+                  <div class="hero-points" id="hero-points"><span><img loading="lazy" src="images/crm-lifelinkr.webp"
+                        alt="In-Built CRM"></span>In-Built CRM</div>
+                  <div class="hero-points" id="hero-points"><span><img loading="lazy" src="images/patient-insight.webp"
+                        alt=" Patient Insight"></span>Patient Insight</div>
+                  <div class="hero-points" id="hero-points"><span><img loading="lazy" src="images/customize.webp"
+                        alt="Custom Fit"></span>Custom Fit</div>
+                  <div class="hero-points" id="hero-points"><span><img loading="lazy" src="images/integration.webp"
+                        alt="Easy Connect"></span>Easy Connect</div>
+                  <div class="hero-points" id="hero-points"><span><img loading="lazy"
+                        src="images/informatics-on-the-go.webp" alt="Info on-the-go"></span>Info on-the-go</div>
+                  <div class="hero-points" id="hero-points"><span><img loading="lazy" src="images/migration.webp"
+                        alt="Data Transfer"></span>Data Transfer</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="schedule-btn desktop-cta">
+              <a href="https://api.whatsapp.com/send?phone=919999854243&amp;text=Hi,%20I%20need%20a%20demo%20of%20your%20IVF%20management%20software%20for%20my%20IVF%20clinic.%20Thanks"
+                class="btn-get-started scrollto call-for-consultations-track-btn">
+                Schedule Demo<img class="btn_arrow" src="./images/btn-arrow-brown.png" alt="Arrow" width="20px"
+                  height="14px">
+              </a>
+            </div>
+
+
+            <div class="schedule-btn mbl-cta">
+              <a  class="btn-get-started openModal scrollto call-for-consultations-track-btn">
+                Schedule Demo<img class="btn_arrow" src="./images/btn-arrow-brown.png" alt="Arrow" width="20px"
+                  height="14px">
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-6 register_form2">
+            <div class="text-center">
+                      <h3 class="register_tag mb-4">Schedule a Free Demo</h3>
+                    </div>
+            <!-- Hero Section Form start -->
+           <form action="mail/mail4.php" method="post" id="demoForm">
+              <div class="form_block">
+                  <!-- Initial Fields -->
+                  <div class="form_field_new" id="initial-fields">
+                      <div class="row">
+                          <div class="col-lg-6 col-12">
+                              <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Full Name*"
+                                  name="name"
+                                  required=""
+                                  pattern="^[a-zA-Z\s]+$"
+                                  title="Name should only contain letters and spaces."
+                              />
+                          </div>
+                          <div class="col-lg-6">
+                              <input
+                                  type="email"
+                                  class="form-control"
+                                  placeholder="Email Address*"
+                                  name="email"
+                                  required=""
+                                  title="Enter a valid email address."
+                              />
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6 col-12">
+                              <input
+                                  type="text"
+                                  class="form-control User_Number"
+                                  placeholder="Phone Number*"
+                                  name="phone"
+                                  required=""
+                                  pattern="[6-9][0-9]{9}"
+                                  title="Phone number must be 10 digits and start with 6-9."
+                              />
+                          </div>
+                          <div class="col-lg-6">
+                              <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="WhatsApp Number"
+                                  name="whats_num"
+                                  pattern="[6-9][0-9]{9}"
+                                  title="WhatsApp number must be 10 digits and start with 6-9."
+                              />
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-lg-6 col-12">
+                              <input
+                                  type="text"
+                                  class="form-control User_Number"
+                                  placeholder="Clinic Name*"
+                                  name="clinic_name"
+                                  required=""
+                              />
+                          </div>
+                          <div class="col-lg-6">
+                              <input
+                                  type="text"
+                                  class="form-control"
+                                  placeholder="Country*"
+                                  name="country"
+                                  required=""
+                              />
+                          </div>
+                      </div>
+
+                      <button type="button" id="next-btn" class="btn-get-started">Next</button>
+                  </div>
+
+                  <!-- Hidden Fields -->
+                  <div class="form_field_new hidden-fields" id="additional-fields" style="display: none; transform: translateX(100%); opacity: 0;">
+                      <div class="row">
+                          <div class="col-lg-6 col-12">
+                              <input type="text" class="form-control User_Number" placeholder="City*" name="city" required="" />
+                          </div>
+                          <div class="col-lg-6">
+                              <input type="text" class="form-control" placeholder="No. of Users" name="no_of_user" />
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-12">
+                              <select type="text" class="form-control" name="is_using_software" required="">
+                                  <option value="" disabled selected>Currently Using Any Software?*</option>
+                                  <option value="yes">Yes</option>
+                                  <option value="no">No</option>
+                              </select>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-12">
+                              <textarea name="message" id="form_text_area" placeholder="Message*" required="" rows="2"></textarea>
+                          </div>
+                      </div>
+                      <div class="row">
+                          <div class="col-12">
+                              <div class="form-check radio-container checkbox-space d-flex">
+                                  <input type="checkbox" name="checkbox" id="checkbox" class="custom-checkbox" checked />
+                                  <label class="form-check-label ps-0 pb-0 mt-0" for="terms">
+                                      I agree and accept the <span style="color: #f4c129; font-weight: 700; cursor: pointer;" onclick="openModal('TermPolicy')">Terms & Conditions</span>
+                                  </label>
+                              </div>
+                          </div>
+                      </div>
+                      <button type="button" id="back-btn" class=""><img src="./images/left.png" alt="icon" style="width: 26px;" /></button>
+                      <button type="submit" name="submit" class="btn-get-started">Submit<img style="margin-left: 10px;" src="./images/btn-arrow-brown.png" alt="arrow" width="20" height="17" /></button>
+                  </div>
+              </div>
+            </form>
+
+
+          </div>
+
+          <div class="col-12 register_form2_mobile">
+          <div class=" getreport text-center" id="getreport">
+            <h3 class="register_tag">Schedule a Free Demo</h3>
+            <div class="register_tag_msg">
+              Experience Seamless <span style="color: #f4c129">
+                Healthcare Management</span><br>
+              with LifeLinkr
+            </div>
+            <form class="form_block" action="mail/mail.php" method="post">
+              <div class="row  ">
+                <div class=" col-lg-6  mb-3 mb-sm-0">
+                  <input type="text" class="form-control" placeholder="Full Name*" name="name" required="">
+
+                </div>
+                <div class="2 col-lg-6  mb-3 mb-sm-0">
+                  <input type="text" class="form-control" placeholder="Email Address*" name="email" required="">
+                </div>
+              </div>
+
+              <div class="row  ">
+                <div class=" col-lg-6  mb-3 mb-sm-0 phone_no">
+                  <input type="text" class="form-control User_Number" placeholder="Phone Number*" pattern="[6-9][0-9]{9}" name="phone" required="">
+                </div>
+
+                <div class="2 col-lg-6  mb-3  mb-sm-0">
+                  <input type="text" class="form-control User_Number" placeholder="WhatsApp Number" name="whats_num" pattern="[6-9][0-9]{9}">
+                </div>
+              </div>
+
+              <div class="row ">
+                <div class="col-lg-6 mb-3  mb-sm-0">
+                  <input type="text" class="form-control" placeholder="Clinic Name*" name="clinic_name" required="">
+                </div>
+                <div class=" col-lg-6  mb-3 mb-sm-0">
+                  <input type="text" class="form-control" placeholder="Country*" name="country" required="">
+                </div>
+              </div>
+
+              <div class="row ">
+                <div class="col-lg-6 mb-3  mb-sm-0">
+                  <input type="text" class="form-control" placeholder="City*" name="city" required="">
+                </div>
+                <div class=" col-lg-6  mb-3 mb-sm-0">
+                  <input type="text" class="form-control" placeholder="No. of Users" name="no_of_user">
+                </div>
+              </div>
+
+              <div class="row ">
+                <div class="col-lg-12 mb-3  mb-sm-0">
+                  <select type="text" class="form-control" placeholder="Currently Using Any Software?*" name="is_using_software" required="">
+                  <option value="" disabled="" selected="">Currently Using Any Software?*</option>
+                  <option value="">Yes</option>
+                  <option value="">No</option>
+                </select>
+                </div>
+
+              </div>
+
+              <div class="row ">
+                <div class="col-lg-12 mb-3  mb-sm-0">
+                  <textarea name="message" id="form_text_area" placeholder="Message*" required="" rows="3"></textarea>
+                </div>
+              </div>
+
+              <div class="row user-agree-btn ">
+                <div class="col-12 d-flex">
+                  <!-- <label class="checkbox-wrapper mx-3"> -->
+                  <input type="checkbox" class="custom-checkbox" name="myCheckbox" checked="">
+                  <!-- </label> -->
+                  <p>I agree and accept the <span style="color: #F4C129; font-weight: 700; cursor: pointer;" onclick="openModal('TermPolicy')">Terms &amp; Conditions</span></p>
+                </div>
+              </div>
+
+              <button type="submit" name="submit" class="btn-get-started">Submit<img class="btn_arrow" style="margin-left:10px;" src="./images/btn-arrow-brown.png" alt="arrow" width="20" height="17"></button>
+
+            </form>
+          </div>
+        </div>
+          
+        </div>
+        <div class="row logo_container">
+        <div class="logo-head">
+          <p class="logo_heaging">Trusted  by Many IVF Clinics :</p>
+        </div>
+       
+           <div class="slider-container">
+            <div class="slider" id="slider">
+               <div class="slide-card"><img  class="" src="./logo/baby-step.png" /></div>
+               <div class="slide-card"> <img  class="fix-width" src="./logo/life-center.png"  /></div>
+               <div class="slide-card"><img  class="" src="./logo/apex.png" /></div>
+               <div class="slide-card"> <img  class="fix-width" src="./logo/bloom.png"  /></div>
+               <div class="slide-card"><img  class="" src="./logo/fertilia-ivf.png" /></div>
+               <div class="slide-card"> <img  class="" src="./logo/fertility-nova.png"  /></div>
+               <div class="slide-card"><img  class="" src="./logo/neelkanth.png" /></div>
+              <div class="slide-card"><img  class="" src="./logo/hoizon.png" /></div>
+             
+            </div>
+          </div>
+         
+      
+        </div>
+      </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--    
+     =================================== 
+                main section end
+    ====================================
+    -->
+
+  <!--  
+    ==========================
+          Card section 
+    ==========================
+    -->
+
+  <section class="container">
+    <div class="row">
+      <div class="col-lg-9 card-container">
+        <div class="card-div">
+          <img src="images/data-protection.png" alt="Data Protection">
+          <span>Data Protection</span>
+          <p>
+            Protect Data Leakage With<br>
+            Strict Data Protection
+
+          </p>
+
+        </div>
+
+        <div class="card-div">
+          <img src="images/task-manager.png" alt="Built in task manager">
+          <span>Built in task manager</span>
+          <p>
+            Never Miss a Task, Get
+            <br>
+            Notified at Each Approval
+          </p>
+        </div>
+
+
+        <div class="card-div">
+          <img src="images/coding.png" alt="Easy walkthrough">
+          <span>Easy walkthrough </span>
+          <p>
+            Access Patient Info <br>
+            Anytime, From Any Screen
+          </p>
+        </div>
+
+        <div class="card-div">
+          <img src="images/patient.png" alt="Map patients journey">
+          <span>Map patients journey</span>
+          <p>
+            Step Linked Progression <br>
+            Bar to Know Milestones
+          </p>
+        </div>
+
+        <div class="card-div">
+          <img src="images/one-stop-solution.png" alt="One stop solution">
+          <span>One stop solution</span>
+          <p>
+            No Need For Multiple<br>
+            Software Just Use One
+          </p>
+        </div>
+
+
+        <div class="card-div">
+          <img src="images/ai.png" alt="AI integration">
+          <span>AI integration</span>
+          <p>
+            TTS and AI Integrated
+            <br>
+            to Reduce Humane Error
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+     =============================
+          Card section end
+    ==============================
+     -->
+
+
+  <!-- 
+     ===========================================
+         Why choose us section start here
+    ==============================================
+     -->
+  <section class="container Included_Block" id="choose">
+    <div class="row">
+      <div class="col-lg-9">
+        <div class="white_block white_block_transparent">
+          <h3 class="brown_heading">Why Choose Us?</h3>
+
+          <div class="card">
+            <img loading="lazy" srcset="./img/lab-management.png" sizes="(max-width: 600px) 480px, 800px"
+              src="./img/lab-management.png" alt="Seamless Patient Management" height="143" width="175" />
+            <div class="card-content">
+
+
+              <div class="card-text">
+                <div class="card-header">
+                  <span class="card-number">1.</span>
+                  <span class="card-title">Seamless Patient Management</span>
+                </div>
+                <div class="card-body">
+                  <div class="card-description">
+                    <span>Effortlessly manage patient records, appointments, communications and history in a
+                      centralized, secure platform tailored for IVF clinics, enhancing efficiency
+                    </span>
+                    <span class="full-description hidden">
+                      and improving care quality.
+
+                    </span>
+                    <span class="read-more-btn">Read More.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img loading="lazy" srcset="images/IVF-cycle.png" sizes="(max-width: 600px) 480px, 800px"
+              src="images/IVF-cycle.png" alt="Detailed IVF Cycle Tracking" height="143" width="175" />
+            <div class="card-content">
+              <div class="card-text">
+                <div class="card-header">
+                  <span class="card-number">2.</span>
+                  <span class="card-title">Detailed IVF Cycle Tracking</span>
+                </div>
+                <div class="card-body">
+                  <div class="card-description">
+                    <span>Track each stage of the IVF cycle, from egg retrieval to embryo transfer, with real-time
+                      updates and data-driven insights for better outcomes. improving decision
+                    </span>
+                    <span class="full-description hidden">
+                      -making and enhancing patient care.
+                    </span>
+                    <span class="read-more-btn">Read More.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img loading="lazy" srcset="./img/automated-billing-and-financei-integration.webp"
+              sizes="(max-width: 600px) 480px, 800px" src="./img/automated-billing-and-financei-integration.webp"
+              alt="Automated Billing & Finance Integration" height="143" width="175" />
+            <div class="card-content">
+              <div class="card-text">
+                <div class="card-header">
+                  <span class="card-number">3.</span>
+                  <span class="card-title">Automated Billing & Finance Integration</span>
+                </div>
+                <div class="card-body">
+                  <div class="card-description">
+                    <span>Streamline complex IVF billing processes with automated milestone-based, package billing and
+                      insurance management in one easy-to-use system, reducing
+                    </span><span class="full-description hidden">
+                      errors and saving valuable time for your clinic staff.
+                    </span>
+                    <span class="read-more-btn">Read More.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img loading="lazy" srcset="images/lab-management.png" sizes="(max-width: 600px) 480px, 800px"
+              src="images/lab-management.png" alt="Lab Management" height="143" width="175" />
+
+            <div class="card-content">
+
+              <div class="card-text">
+                <div class="card-header">
+                  <span class="card-number">4.</span>
+                  <span class="card-title">Lab Management</span>
+                </div>
+                <div class="card-body">
+                  <div class="card-description">
+                    <span>Optimize lab operations by tracking embryo development, managing cryostorage and maintaining
+                      compliance with laboratory standards, all while ensuring
+                    </span>
+                    <span class="full-description hidden">
+                      the highest quality of care for your patients.
+                    </span>
+                    <span class="read-more-btn">Read More.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <img loading="lazy" srcset="./img/reporting-and-compliance.png" sizes="(max-width: 600px) 480px, 800px"
+              src="./img/reporting-and-compliance.png" alt="Reporting & Compliance" height="143" width="175" />
+
+            <div class="card-content">
+
+              <div class="card-text">
+                <div class="card-header">
+                  <span class="card-number">5.</span>
+                  <span class="card-title"> Reporting & Compliance</span>
+                </div>
+                <div class="card-body">
+                  <div class="card-description">
+                    <span>Generate accurate, automated reports and ensure your clinic meets regulatory standards while
+                      tracking performance metrics and patient outcomes
+                    </span>
+                    <span class="full-description hidden">
+                      for improved quality of care.
+                    </span>
+                    <span class="read-more-btn">Read More.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+     ===========================================
+         Why choose us section end here
+    ==============================================
+     -->
+
+  <!-- 
+     ===========================================
+         Benefits  section start here
+    ==============================================
+     -->
+  <section class="container benefits_block">
+    <div class="row">
+      <div class="col-lg-9">
+        <div id="benefits" class="white_block_mobile_adjust white_block text-center">
+          <h3 class="brown_heading">Benefits You Will Gain</h3>
+          <div class="benefits_block">
+            <div class="row">
+              <div class="col-lg-4 col-6">
+                <div class="benefits_block_content">
+
+                  <img srcset="img/doctor-efficeincy.webp" sizes="(max-width: 600px) 480px, 800px"
+                    src="img/doctor-efficeincy.webp" height="" width="" alt="Operational Efficiency">
+                  <div class="benefits_desc">Optimize <strong class="benefit_strong">Operations</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
+                <div class="benefits_block_content">
+
+                  <img srcset="img/crm.webp" sizes="(max-width: 600px) 480px, 800px" src="img/crm.webp" height=""
+                    width="" alt="Patient Growth">
+                  <div class="benefits_desc">Leverage CRM for <strong class="benefit_strong">Patient</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
+                <div class="benefits_block_content">
+
+                  <img srcset="img/financial.webp" sizes="(max-width: 600px) 480px, 800px" src="img/financial.webp"
+                    height="" width="" alt="Financial Processest">
+                  <div class="benefits_desc">Simplify
+                    <strong class="benefit_strong">Financial Processes</strong>
+
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
+                <div class="benefits_block_content">
+                  <img srcset="img/data-security.webp" sizes="(max-width: 600px) 480px, 800px"
+                    src="img/data-security.webp" height="" width="" alt="Data Security">
+                  <div class="benefits_desc">Enhanced
+                    <strong class="benefit_strong">Data Security</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
+                <div class="benefits_block_content">
+
+                  <img srcset="img/analytics-and-dashboard.webp" sizes="(max-width: 600px) 480px, 800px"
+                    src="img/analytics-and-dashboard.webp" height="" width="" alt="Financial Processes">
+                  <div class="benefits_desc">Simplify<strong class="benefit_strong"> Financial Processes</strong>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-6">
+                <div class="benefits_block_content">
+                  <img srcset="img/medical-records.webp" sizes="(max-width: 600px) 480px, 800px"
+                    src="img/medical-records.webp" height="" width="" alt="Medical Records">
+                  <div class="benefits_desc">Forever <strong class="benefit_strong">Medical Records</strong>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- 
+     ===========================================
+         Benefits  section end here
+    ============================================
+     -->
+
+
+
+  <!-- 
+     ===========================================
+         FAQ  section start here
+    ============================================
+     -->
+
+  <section class="container ">
+    <div class="row">
+      <div class="col-lg-9">
+        <div id="faq" class="white_block text-center faq">
+          <div class="faq_mobile">
+            <img loading="lazy" class="img-fluid" src="img/faq.webp" alt="faq" width="336px" height="172px" />
+          </div>
+          <h3 class="brown_heading">FAQs</h3>
+          <div class="faq_desktop">
+            <img loading="lazy" class="img-fluid" src="./img/faq.webp" alt="faq" height="430px" />
+          </div>
+          <!-- ---accordion-- -->
+          <div class="accordion-container">
+            <div class="accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <div class="accordion-button flex_between">
+                  <span class="accordion-question">
+                    What features does LifeLinkr software include for clinics? </span>
+                  <div class="up-icon flex_center">
+                    <img src="./images/down-chevron.svg" class="accordion-icon" alt="down" />
+                  </div>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-answer">
+                    LifeLinkr includes patient management, appointment scheduling, billing, EHR,
+                    and customizable dashboards to streamline clinic operations.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-button flex_between">
+                  <span class="accordion-question">
+                    Is LifeLinkr software suitable for individual doctors?
+                  </span>
+                  <div class="up-icon flex_center">
+                    <img src="./images/down-chevron.svg" class="accordion-icon" alt="down" />
+                  </div>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-answer">
+                    Yes, LifeLinkr is made for both clinics and doctors. It helps improve
+                    managing medical practices and caring better for patients.
+
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="accordion-item">
+                <div class="accordion-button flex_between">
+                  <span class="accordion-question">
+                    How secure is patient data in LifeLinkr software? </span>
+                  <div class="up-icon flex_center">
+                    <img src="./images/down-chevron.svg" class="accordion-icon" alt="down" />
+                  </div>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-answer">
+                    LifeLinkr employs robust security measures, including encryption and
+                    compliance with HIPAA regulations, to ensure patient data protection.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-button flex_between">
+                  <span class="accordion-question">
+                    Can I customize the LifeLinkr dashboard style? </span>
+                  <div class="up-icon flex_center">
+                    <img src="./images/down-chevron.svg" class="accordion-icon" alt="down" />
+                  </div>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-answer">
+                    Absolutely, LifeLinkr provides customizable dashboards tailored to fit your
+                    specific needs and preferences for better user experience.
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div class="accordion-item hidden_accordion">
+                <div class="accordion-button flex_between">
+                  <span class="accordion-question">
+
+                    How do I get started with LifeLinkr software?
+
+                  </span>
+                  <div class="up-icon flex_center">
+                    <img src="./images/down-chevron.svg" class="accordion-icon" alt="down" />
+                  </div>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-answer">
+
+                    You can register in just 30 seconds, try a free demo and contact our
+                    support team for further assistance. Our team is ready to help.
+
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item hidden_accordion">
+                <div class="accordion-button flex_between">
+                  <span class="accordion-question">
+
+                    Does LifeLinkr integrate with other healthcare systems?
+                  </span>
+                  <div class="up-icon flex_center">
+                    <img src="./images/down-chevron.svg" class="accordion-icon" alt="down" />
+                  </div>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-answer">
+
+                    Yes, LifeLinkr supports integration with various healthcare systems,
+                    ensuring seamless data exchange and interoperability.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item hidden_accordion">
+                <div class="accordion-button flex_between">
+                  <span class="accordion-question">
+
+                    What kind of support is available for users?
+
+                  </span>
+                  <div class="up-icon flex_center">
+                    <img src="./images/down-chevron.svg" class="accordion-icon" alt="down" />
+                  </div>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-answer">
+
+                    LifeLinkr provides extensive support including training resources, customer
+                    service and ongoing maintenance to assist users.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item hidden_accordion">
+                <div class="accordion-button flex_between">
+                  <span class="accordion-question">
+
+                    Is there a mobile version of LifeLinkr HIS Software?
+
+                  </span>
+                  <div class="up-icon flex_center">
+                    <img src="./images/down-chevron.svg" class="accordion-icon" alt="down" />
+                  </div>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-answer">
+
+                    Yes, LifeLinkr HIS Software has a mobile version, allowing you to access all
+                    features, manage patient care and streamline operations on the go.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item hidden_accordion">
+                <div class="accordion-button flex_between">
+                  <span class="accordion-question">
+                    How can I schedule a demo of LifeLinkr?
+                  </span>
+                  <div class="up-icon flex_center">
+                    <img src="./images/down-chevron.svg" class="accordion-icon" alt="down" />
+                  </div>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-answer">
+                    You can easily request a demo through our website and our dedicated team
+                    will thoroughly guide you through all the features and numerous benefits of
+                    LifeLinkr.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <div class="accordion-button flex_between">
+                  <span class="accordion-question">
+                    What are the pricing plans for LifeLinkr?
+                  </span>
+                  <div class="up-icon flex_center">
+                    <img src="./images/down-chevron.svg" class="accordion-icon" alt="down" />
+                  </div>
+                </div>
+                <div class="accordion-content">
+                  <div class="accordion-answer">
+
+                    LifeLinkr offers various pricing plans to suit different needs, including
+                    monthly and annual subscriptions, with discounts available for long-term
+                    commitments.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <p class="load_more" id="load_more">Load More</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+     ===========================================
+         FAQ  section end here
+    ==============================================
+     -->
+
+  <!-- 
+=======================================
+Schedule a Free Demo form Section Start
+=======================================
+-->
+  <section id="mainForm">
+    <div class="container">
+      <div class="row ">
+        <div class="col-lg-9">
+          <div class=" getreport text-center" id="getreport">
+            <h3 class="register_tag">Schedule a Free Demo</h3>
+            <div class="register_tag_msg">
+              Experience Seamless <span style="color: #f4c129">
+                Healthcare Management</span><br>
+              with LifeLinkr
+            </div>
+            <form class="form_block" action="mail/mail.php" method="post">
+              <div class="row  ">
+                <div class=" col-lg-6  mb-3 mb-sm-0">
+                  <input type="text" class="form-control" placeholder="Full Name*" name="name" required>
+
+                </div>
+                <div class="2 col-lg-6  mb-3 mb-sm-0">
+                  <input type="text" class="form-control" placeholder="Email Address*" name="email" required>
+                </div>
+              </div>
+
+              <div class="row  ">
+                <div class=" col-lg-6  mb-3 mb-sm-0 phone_no">
+                  <input type="text" class="form-control User_Number" placeholder="Phone Number*"
+                    pattern="[6-9][0-9]{9}" name="phone" required>
+                </div>
+
+                <div class="2 col-lg-6  mb-3  mb-sm-0">
+                  <input type="text" class="form-control User_Number" placeholder="WhatsApp Number" name="whats_num"
+                    pattern="[6-9][0-9]{9}">
+                </div>
+              </div>
+
+              <div class="row ">
+                <div class="col-lg-6 mb-3  mb-sm-0">
+                  <input type="text" class="form-control" placeholder="Clinic Name*" name="clinic_name" required>
+                </div>
+                <div class=" col-lg-6  mb-3 mb-sm-0">
+                  <input type="text" class="form-control" placeholder="Country*" name="country" required>
+                </div>
+              </div>
+
+              <div class="row ">
+                <div class="col-lg-6 mb-3  mb-sm-0">
+                  <input type="text" class="form-control" placeholder="City*" name="city" required>
+                </div>
+                <div class=" col-lg-6  mb-3 mb-sm-0">
+                  <input type="text" class="form-control" placeholder="No. of Users" name="no_of_user">
+                </div>
+              </div>
+
+              <div class="row ">
+                <div class="col-lg-12 mb-3  mb-sm-0">
+                  <select type="text" class="form-control" placeholder="Currently Using Any Software?*"
+                    name="is_using_software" required>
+                  <option value="" disabled selected>Currently Using Any Software?*</option>
+                  <option value="">Yes</option>
+                  <option value="">No</option>
+                </select>
+                </div>
+
+              </div>
+
+              <div class="row ">
+                <div class="col-lg-12 mb-3  mb-sm-0">
+                  <textarea name="message" id="form_text_area" placeholder="Message*" required rows="3"></textarea>
+                </div>
+              </div>
+
+              <div class="row user-agree-btn ">
+                <div class="col-12 d-flex">
+                  <!-- <label class="checkbox-wrapper mx-3"> -->
+                  <input type="checkbox" class="custom-checkbox" name="myCheckbox" checked>
+                  <!-- </label> -->
+                  <p>I agree and accept the <span style="color: #F4C129; font-weight: 700; cursor: pointer;"
+                      onclick="openModal('TermPolicy')">Terms & Conditions</span></p>
+                </div>
+              </div>
+
+              <button type="submit" name="submit" class="btn-get-started">Submit<img class="btn_arrow"
+                  style="margin-left:10px;" src="./images/btn-arrow-brown.png" alt="arrow" width="20"
+                  height="17" /></button>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 
+=======================================
+Schedule a Free Demo form Section End 
+======================================
+-->
+
+  <!-- 
+=======================================
+Detail section Section Start 
+======================================
+-->
+
+
+  <section id="who">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="white_block heading-section bottom-two-section">
+            <h3 class="brown_heading text-center">Managing ART Made Hassle Free</h3>
+            <div class="row">
+              <div class="col-lg-6 col-12 d-flex align-items-start">
+                <figure>
+                  <img src="img/art.webp" alt="image">
+                </figure>
+              </div>
+              <div class="col-lg-6 col-12">
+                <ul>
+                  <span class="show-text">
+                    <li>
+                      <p>Comprehensive and secure platform for managing IVF and reproductive health information.</p>
+                    </li>
+                    <li>
+                      <p>Centralizes patient data, lab records, treatment cycles, and financial information.</p>
+                    </li>
+                    <li>
+                      <p>Designed specifically for fertility clinics, making critical information easily accessible.</p>
+                    </li>
+                  </span>
+                  <span class="show-hide-remainig" style="display: none;">
+
+                    <li>
+                      <p>Simplifies report preparation for ART audits and regulatory agency submissions.</p>
+                    </li>
+                  </span>
+                  <li style="list-style: none;">
+                    <a href="javascript:void(0);" class="btn-read-more">Read More.</a>
+                  </li>
+                </ul>
+                <a  class="btn-get-started openModal">Schedule Demo<img loading="lazy" class="btn_arrow"
+                    src="./images/btn-arrow-brown.png" alt="arrow" width="20" height="17" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Second Heading Section -->
+  <section id="who-2">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="white_block heading-section bottom-two-section">
+            <h3 class="brown_heading text-center">Stay Focused, No More Software Hopping</h3>
+            <div class="row rev-mbl-section">
+              <div class="col-lg-6 col-12">
+                <ul>
+                  <span class="show-text">
+                    <li>
+                      <p>Eliminates the need for multiple standalone systems by integrating essential functions into one
+                        platform.</p>
+                    </li>
+                    <li>
+                      <p>Includes HR, payroll, accounting, bank reconciliation, and inventory management tools.</p>
+                    </li>
+                    <li>
+                      <p>Provides comprehensive solutions for billing, patient management, pharmacy tracking, and
+                        bookkeeping.</p>
+                    </li>
+                  </span>
+                  <span class="show-hide-remainig" style="display: none;">
+
+                    <li>
+                      <p>Simplifies administrative and financial tasks, enabling easy and accurate clinic operations.
+                      </p>
+                    </li>
+                  </span>
+                  <li style="list-style: none;">
+                    <a href="javascript:void(0);" class="btn-read-more">Read More.</a>
+                  </li>
+                </ul>
+                <a  class="btn-get-started openModal">Schedule Demo<img loading="lazy" class="btn_arrow"
+                    src="./images/btn-arrow-brown.png" alt="arrow" width="20" height="17" /></a>
+              </div>
+              <div class="col-lg-6 col-12 d-flex align-items-start">
+                <figure>
+                  <img src="img/hola-hoop.webp" alt="image">
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- 
+=======================================
+Header Section  Section End 
+======================================
+-->
+
+
+
+  <!-- <aside>
+    <div class="right_block register_desktop" id="stickyDiv" style="position: fixed; top: 95px;">
+      <h3> IVF Software for Clinics</h3>
+
+      <span class="date-and-time"><img loading="lazy" src="images/tick.png" alt="icon" width="100" height="100">Inbuilt
+        CRM
+        Software </span>
+      <span class="date-and-time d-flex"><img loading="lazy" src="images/tick.png" alt="icon" width="100" height="100">
+        Inventory Management
+      </span>
+      <span class="date-and-time"><img loading="lazy" src="images/tick.png" alt="icon" width="100"
+          height="100">Real-Time
+        Analytics</span>
+      <a href="#mainForm" class="pay-btn btn-get-started scrollto right_register register-now-track-btn">
+        Request a Demo</a>
+      <span class="date-and-time gray"><img loading="lazy" src="images/app-development.svg" alt="icon" width="100"
+          height="100">Mobile
+        Accessibility</span>
+      <span class="date-and-time gray"><img loading="lazy" src="images/equalizer.svg" alt="icon" width="100"
+          height="100">Customizable Dashboards </span>
+      <span class="date-and-time gray"><img loading="lazy" src="images/security.svg" alt="icon" width="100"
+          height="100">Secure
+        Patient Data Management</span>
+      <div class="people_joined_right">
+        <img loading="lazy" src="./img/doctor-bold.svg" alt="Date">
+        <span class="fixed-bottom-text">
+          <strong > Loved by Many Doctors and IVF Clinics </span>
+      </div>
+    </div>
+  </aside> -->
+
+  <aside>
+    <div class="right_block register_desktop" id="stickyDiv" style="position: fixed; top: 95px;">
+      <h3> Schedule Software Demo</h3>
+
+      <!--====date picker == -->
+      <div class="right-panel">
+        <div class="header_calender">
+        </div>
+        <div class="calendar">
+          <div class="calendar-header">
+            <div class="month-nav">
+              <button class="nav-btn prev-month"><img src="./images/right-arrow.svg" style="rotate: 180deg;" width="12" height="12"
+                  alt=""></button>
+              <span class="current-month">December 2024</span>
+              <button class="nav-btn next-month"><img src="./images/right-arrow.png" width="12" height="12"
+                  alt=""></button>
+            </div>
+          </div>
+          <div class="weekdays">
+            <span>MON</span>
+            <span>TUE</span>
+            <span>WED</span>
+            <span>THU</span>
+            <span>FRI</span>
+            <span>SAT</span>
+            <span>SUN</span>
+          </div>
+          <div class="days"></div>
+        </div>
+        <div class="time-selector">
+          <label>Select Time</label>
+
+          <div class="time-select-wrapper">
+            <select id="time-select" required>
+              <option value="">Select a time</option>
+              <option value="1:00PM">1:00 PM</option>
+              <option value="1:30PM">1:30 PM</option>
+              <option value="2:00PM">2:00 PM</option>
+              <option value="2:30PM">2:30 PM</option>
+              <option value="3:00PM">3:00 PM</option>
+              <option value="3:30PM">3:30 PM</option>
+              <option value="4:00PM">4:00 PM</option>
+              <option value="4:30PM">4:30 PM</option>
+            </select>
+          </div>
+          <p class="selected-date"></p>
+
+        </div>
+        <!-- <div class="timezone-selector">
+            <label>Time zone</label>
+            <select id="timezone">
+                <option value="IST">India Standard Time (11:15am)</option>
+            </select>
+        </div> -->
+        <button class="confirm-button">
+          <!-- <button class="btn-confirm">Confirm Meeting</button> -->
+          <a class="pay-btn btn-confirm btn-get-started scrollto right_register register-now-track-btn">
+            Next </a>
+        </button>
+      </div>
+
+      <form class="right_sticky_form" action="mail/mail5.php" method="post">
+        <input type="text" name="selected_date" class="selected_date" hidden>
+        <input type="text" name="selected_time" class="selected_time" hidden>
+        <input type="text" class="form-control mb-3" placeholder="Name*" name="name" required>
+        <input type="email" class="form-control mb-3" placeholder="Email*" name="email" required>
+
+        <input type="text" class="User_Number form-control mb-3" pattern="[6-9][0-9]{9}" placeholder="Mobile Number*" name="phone" required>
+
+        <input type="text" class="form-control mb-3" placeholder="Clinic Name*" name="clinic_name" required>
+        <input type="text" class="form-control mb-3" placeholder="City" name="city">
+        <!-- <input type="text" class="form-control mb-3" placeholder="Currently Using Software" name="is_using_software"> -->
+        <select class="form-control mb-3" name="is_using_software" required>
+          <option value="" disabled selected>Currently Using Any Software?</option>
+          <option value="yes">Yes</option>
+          <option value="no">No</option>
+        </select>
+        
+
+        <input type="text" class="form-control mb-3" placeholder="Share the Problem You’re Facing" name="message">
+        <div class="form-group">
+          <div id="email-container" class="email-input-container">
+            <input type="text" id="email-input" name="invities" placeholder="Add Invitees Emails" class="email-input" />
+          </div>
+        </div>
+        <div class="back-schedule-btns">
+          <a id="backBtnStickyForm"
+            class="pay-btn btn-confirm btn-get-started scrollto right_register register-now-track-btn">
+            Back </a>
+          <button type="submit" name="submit"
+            class="pay-btn btn-confirm btn-get-started scrollto right_register register-now-track-btn">
+            Submit </button>
+        </div>
+      </form>
+    </div>
+  </aside>
+
+  <!-- cx
+    ====================================== 
+              Footer start here
+    ========================================
+     -->
+
+
+  <!-- ************************Mobile footer************************ -->
+  <div class="register_mobile ">
+    <div class="register_mobile_heading">
+      <h3>For IVF Software</h3>
+      <a  class="pay-btn btn-get-started scrollto right_register openModal">Schedule Demo</a>
+    </div>
+    <div class="register_mobile_detail">
+
+      <span class="date-and-time"><img loading="lazy" src="./images/verified.png" alt="Rupee">Complete Data
+        Security</span>
+      <span class="date-and-time"><img loading="lazy" src="./images/doctor.png" alt="Group" width="100"
+          height="100">Easy-to-Use Software</span>
+    </div>
+  </div>
+
+
+
+  <!-- ****************************Desktop footer*************************** -->
+
+
+  <div class="content_area ">
+    <!-- </footer> -->
+
+    <footer id="footer" class="dashboard footer footer-section d-flex align-items-end">
+      <div class="container">
+        <div class="row text-center text-md-start d-flex flex-column align-items-center">
+          <!-- Logo Section -->
+          <div class="col-12  mt-1 mb-md-0 d-flex justify-content-center align-items-center">
+            <img src="img/footer-logo.png" alt="LifeLinkr Logo" class="img-fluid"
+              style="max-height: 65px; width: 300px;">
+            <!-- <span><img class="ganesh-ji-img" src="./images/ganesh-ji-1.svg" alt=""></span> -->
+          </div>
+
+          <!-- Copyright Text -->
+          <div class="mt-1 col-12 text-center ">
+            <p class="mb-0 all_rights">All Rights Reserved 2024–25 © Copyright – LifeLinkr |
+
+            </p>
+          </div>
+        </div>
+
+        <!-- Links Section -->
+        <div class="row mt-0">
+          <div class="col-12 text-center">
+            <div class="footer-links d-inline-block">
+
+              <a onclick="openModal('privacyPolicy')">Privacy Policy |</a>
+              <a onclick="openModal('adsPolicy')">Ads Policy |</a>
+              <a onclick="openModal('dataPrivacy')">Data Privacy |</a>
+              <a onclick="openModal('disclaimerPolicy')">Disclaimer |</a>
+              <a onclick="openModal('userAgreemen-container')">User Agreement |</a>
+              <a onclick="openModal('property')">Intellectual Property Rights |</a>
+              <a onclick="openModal('cookiesPolicy')">Cookie Policy |</a>
+              <!-- <br> -->
+              <a onclick="openModal('refundPolicy')">Refund Policy |</a>
+              <a onclick="openModal('contactInfo')">Contact Information |</a>
+              <a onclick="openModal('accesibilityPolicy')">Accessibility Statement |</a>
+              <a onclick="openModal('securityPolicy')">Security Policy |</a>
+              <a onclick="openModal('gdprPolicy')">GDPR Compliance</a>
+
+
+              <div class="modal-backdrop" id="TermPolicy-backdrop" onclick="closeModal('TermPolicy')"></div>
+              <!-- -----modal---- -->
+              <div class="modal-container" id="TermPolicy-container">
+                <div class="modal-wrapper flex_center">
+                  <div class="modal-content">
+                    <div class="modal-header flex_between">
+                      <h2 class="modal-title">Terms & Conditions</h2>
+                      <button class="close-button" onclick="closeModal('TermPolicy')">
+                        <span class="close-icon ">
+                          <img src="./img/cross.svg" alt="close">
+                        </span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="space-y-6">
+                        <div class="section">
+                          <p>
+                            Welcome to LifeLinkr. These Terms and Conditions outline the rules and regulations for the
+                            use of our website and services.
+                          </p>
+                          <p>By accessing this website, we assume you accept these terms in full. Do not continue to
+                            use LifeLinkr’s website if you do not agree to all the terms and conditions stated here.
+                          </p>
+                        </div>
+                        <div class="section">
+                          <h3>1. Use of Our Services</h3>
+                          <p>
+                            By using our services, you agree to comply with all applicable laws and not to use our
+                            platform for any illegal or unauthorized purposes. Any breach of these terms may result in
+                            the suspension or termination of your access to our services.
+                          </p>
+                        </div>
+                        <div class="section">
+                          <h3>2. Intellectual Property Rights</h3>
+
+                          <p>
+                            Unless otherwise stated, LifeLinkr owns the intellectual property rights for all material
+                            on this website. You may view, download, or print pages from the website for your personal
+                            use, subject to restrictions set in these terms and conditions. You must not republish,
+                            sell, or redistribute content from this website without explicit permission.
+                          </p>
+                        </div>
+                        <div class="section">
+                          <h3>3. User Accounts</h3>
+                          <p>
+                            To access certain features of our platform, you may need to create an account. You are
+                            responsible for maintaining the confidentiality of your account information and for all
+                            activities that occur under your account. We reserve the right to suspend or terminate
+                            accounts that are found to be in violation of these terms.
+                          </p>
+                        </div>
+                        <div class="section">
+                          <h3>4. Limitation of Liability</h3>
+                          <p>
+                            In no event shall LifeLinkr, its directors, employees, or partners be liable for any
+                            indirect, incidental, or consequential damages arising out of the use of our website or
+                            services.
+                          </p>
+                        </div>
+                        <div class="section">
+                          <h3>5. Termination</h3>
+                          <p>
+                            We may terminate or suspend access to our services immediately, without prior notice or
+                            liability, if you breach any of the terms.
+                          </p>
+                        </div>
+                        <div class="section">
+                          <h3>6. Governing Law</h3>
+                          <p>
+                            These terms and conditions are governed by and construed in accordance with the laws of
+                            India and you submit to the exclusive jurisdiction of the courts located in that region.
+                          </p>
+                        </div>
+                        <div class="section">
+                          <h3>7. Changes to Terms</h3>
+                          <p>
+                            LifeLinkr reserves the right to update or modify these terms at any time without prior
+                            notice. By continuing to use the website after changes are made, you agree to be bound by
+                            the revised terms.
+                          </p>
+                        </div>
+                        <div class="section">
+                          <h3>Contact Us</h3>
+                          <p>
+                            If you have any questions about these terms, please contact us at <a
+                              href="mailto:info@lifelinkr.com">info@lifelinkr.com</a>.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <button class="button-gradient" onclick="closeModal('TermPolicy')">
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ==============Ads Policy Modal============= -->
+              <div>
+                <!-- Modal Backdrops -->
+                <div class="modal-backdrop" id="adsPolicy-backdrop" onclick="closeModal('adsPolicy')"></div>
+                <!-- -----modal---- -->
+                <div class="modal-container" id="adsPolicy-container">
+                  <div class="modal-wrapper flex_center">
+                    <div class="modal-content">
+                      <div class="modal-header flex_between">
+                        <h2 class="modal-title">Ads Policy</h2>
+                        <button class="close-button" onclick="closeModal('adsPolicy')">
+                          <span class="close-icon ">
+                            <img src="./img/cross.svg" alt="close">
+                          </span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="space-y-6">
+                          <div class="section">
+                            <p>
+                              At LifeLinkr, we use targeted advertising to promote our software and services to IVF
+                              clinics. This Ads Policy outlines our approach to advertising campaigns and informs you
+                              about the advertisements you may see from us.
+                            </p>
+
+                          </div>
+                          <div class="section">
+                            <h3>Ad Targeting and Delivery</h3>
+                            <p>
+                              LifeLinkr uses advertising platforms, including Google Ads, to reach potential clients in
+                              the IVF industry. Our ads are targeted based on user preferences, search history, and
+                              previous interactions with our website, ensuring our messaging remains relevant to the
+                              intended audience.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Data Use in Advertising</h3>
+
+                            <p>
+                              Personal information used to customize and deliver ads is treated with strict privacy
+                              standards. We follow rigorous data protection protocols, ensuring that all data utilized
+                              is anonymized and secure.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>User Choices and Control</h3>
+                            <p>
+                              Users have control over the types of ads they view via ad preferences on platforms such as
+                              Google. You may adjust these settings to opt out of targeted advertising, reducing the
+                              level of personalization in ads.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Transparency and Communication</h3>
+                            <p>
+                              We value transparency and openly communicate our advertising practices. Our ads are
+                              designed to be clear and distinct from other content, so you are always aware when viewing
+                              an advertisement.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Contact Us</h3>
+                            <p>
+                              For questions or concerns regarding our advertising practices, please contact us at <a
+                                href="mailto:info@lifelinkr.com">info@lifelinkr.com</a>.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Consent</h3>
+                            <p>
+                              By using our services, you acknowledge and consent to our use of advertisements as
+                              outlined in this Ads Policy. LifeLinkr is committed to maintaining respectful, transparent
+                              advertising aligned with our service mission for IVF clinics.
+
+                            </p>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="button-gradient" onclick="closeModal('adsPolicy')">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ==============Data Privacy Modal============= -->
+              <div>
+                <!-- Modal Backdrops -->
+                <div class="modal-backdrop" id="dataPrivacy-backdrop" onclick="closeModal('dataPrivacy')"></div>
+                <!-- -----modal---- -->
+                <div class="modal-container" id="dataPrivacy-container">
+                  <div class="modal-wrapper flex_center">
+                    <div class="modal-content">
+                      <div class="modal-header flex_between">
+                        <h2 class="modal-title">Data Privacy</h2>
+                        <button class="close-button" onclick="closeModal('dataPrivacy')">
+                          <span class="close-icon ">
+                            <img src="./img/cross.svg" alt="close">
+                          </span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="space-y-6">
+                          <div class="section">
+                            <p>
+                              At LifeLinkr, protecting your privacy is fundamental to our commitment to creating a
+                              secure, respectful environment for IVF clinic management. This Data Privacy Policy details
+                              how we safeguard your personal information.
+                            </p>
+
+                          </div>
+                          <div class="section">
+                            <h3>Information Collection</h3>
+                            <p>
+                              We collect essential data for delivering and improving our services, including clinic and
+                              patient information collected through system usage and onboarding processes.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Use and Disclosure</h3>
+
+                            <p>
+                              The information collected is strictly used for:
+                              <br>
+                              <strong>&#x2022;</strong> Enabling access to and managing clinic accounts.
+                              <br>
+                              <strong>&#x2022;</strong> Communicating important updates and relevant content.
+                              <br>
+                              <strong>&#x2022;</strong> Enhancing system experience and software quality.
+                              <br>
+                              We do not disclose personal information to third parties unless legally required or with
+                              explicit consent.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Data Protection</h3>
+                            <p>
+                              We implement advanced security measures to prevent unauthorized access, alteration, or
+                              loss of data. Regular audits and updates are conducted to maintain system integrity and
+                              security.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>User Rights</h3>
+                            <p>
+                              You have the right to access, correct, or delete personal data held by us. Requests can be
+                              made directly to our support team.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Updates to Policy</h3>
+                            <p>
+                              This policy may be updated periodically to reflect changes in our practices or regulatory
+                              requirements. We will notify users of any significant updates.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Contact Us</h3>
+                            <p>
+                              For questions about our data handling, please contact us at <a
+                                href="mailto:info@lifelinkr.com">info@lifelinkr.com</a>.
+
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Consent</h3>
+                            <p>
+                              By using our services, you acknowledge and consent to the terms outlined in this Data
+                              Privacy Policy. We are dedicated to continuously protecting and respecting your privacy.
+
+                            </p>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="button-gradient" onclick="closeModal('dataPrivacy')">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ==============Disclaimer Modal============= -->
+              <div>
+                <!-- Modal Backdrops -->
+                <div class="modal-backdrop" id="disclaimerPolicy-backdrop" onclick="closeModal('disclaimerPolicy')">
+                </div>
+                <!-- -----modal---- -->
+                <div class="modal-container" id="disclaimerPolicy-container">
+                  <div class="modal-wrapper flex_center">
+                    <div class="modal-content">
+                      <div class="modal-header flex_between">
+                        <h2 class="modal-title">Disclaimer</h2>
+                        <button class="close-button" onclick="closeModal('disclaimerPolicy')">
+                          <span class="close-icon ">
+                            <img src="./img/cross.svg" alt="close">
+                          </span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="space-y-6">
+                          <div class="section">
+                            <p>
+                              At LifeLinkr, we strive to offer accurate, reliable tools and resources to support IVF
+                              clinic management. This Disclaimer Policy clarifies the scope of our responsibility
+                              regarding the information and services we provide.
+                            </p>
+
+                          </div>
+                          <div class="section">
+                            <h3>Accuracy of Information</h3>
+                            <p>
+                              While we make every effort to keep all information up to date and accurate, LifeLinkr
+                              cannot guarantee that all data is free from errors. Content may be updated periodically
+                              and may have temporary validity.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Limitations of Liability</h3>
+
+                            <p>
+                              LifeLinkr is not liable for any inaccuracies in content or for actions taken based on the
+                              information provided. Users are encouraged to independently verify information before
+                              applying it in their clinical practices.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>External Links</h3>
+                            <p>
+                              Our platform may include links to external websites. LifeLinkr is not responsible for the
+                              content or accuracy of these external sites.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>User Responsibility</h3>
+                            <p>
+                              Users are responsible for how they use the information provided by LifeLinkr. We are not
+                              liable for any direct or consequential damages arising from the use of our platform.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Policy Updates</h3>
+                            <p>
+                              This Disclaimer may be updated periodically. Users are advised to review it regularly.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Contact Us</h3>
+                            <p>
+                              For any questions or concerns about our Disclaimer Policy, please contact us at <a
+                                href="mailto:info@lifelinkr.com">info@lifelinkr.com</a>.
+
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Acknowledgment</h3>
+                            <p>
+                              By using our services, you acknowledge and accept the terms outlined in this Disclaimer
+                              Policy.
+
+                            </p>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="button-gradient" onclick="closeModal('disclaimerPolicy')">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ==============User Agreement Modal============= -->
+              <div>
+                <!-- Modal Backdrops -->
+                <div class="modal-backdrop" id="userAgreemen-container-backdrop"
+                  onclick="closeModal('userAgreemen-container')"></div>
+                <!-- -----modal---- -->
+                <div class="modal-container" id="userAgreemen-container-container">
+                  <div class="modal-wrapper flex_center">
+                    <div class="modal-content">
+                      <div class="modal-header flex_between">
+                        <h2 class="modal-title">User Agreement</h2>
+                        <button class="close-button" onclick="closeModal('userAgreemen-container')">
+                          <span class="close-icon ">
+                            <img src="./img/cross.svg" alt="close">
+                          </span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="space-y-6">
+                          <div class="section">
+                            <p>
+                              At LifeLinkr, we prioritize integrity and the responsible use of our platform. This User
+                              Agreement defines the obligations and responsibilities of users interacting with our IVF
+                              clinic management software.
+                            </p>
+
+                          </div>
+                          <div class="section">
+                            <h3>Scope of Use</h3>
+                            <p>
+                              Users are granted access to our services for professional, non-commercial purposes within
+                              clinic operations. All resources and content provided by LifeLinkr must be used according
+                              to applicable laws and this agreement.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>User Conduct</h3>
+
+                            <p>
+                              Users must not:
+                              <br>
+                              <strong>&#x2022;</strong> Misuse any content or services offered by LifeLinkr, including
+                              unauthorized sharing or reproduction.
+                              <br>
+                              <strong>&#x2022;</strong> Engage in activities that disrupt platform operations or
+                              infringe upon the rights of others.
+                              <br>
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Account Security</h3>
+                            <p>
+                              Each user is responsible for maintaining the confidentiality of their account information
+                              and for any activities conducted under their account.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Termination and Suspension</h3>
+                            <p>
+                              LifeLinkr reserves the right to suspend or terminate access for users who violate these
+                              terms.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Changes to Agreement</h3>
+                            <p>
+                              This agreement may be updated periodically, and continued use of the platform constitutes
+                              acceptance of these changes.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Contact Us</h3>
+                            <p>
+                              For questions regarding this User Agreement, please contact <a
+                                href="mailto:info@lifelinkr.com">info@lifelinkr.com</a>.
+
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Acceptance of Terms</h3>
+                            <p>
+                              By registering and using our services, users agree to comply with the terms outlined in
+                              this User Agreement.
+
+                            </p>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="button-gradient" onclick="closeModal('userAgreemen-container')">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ============Property Right policy============= -->
+              <div>
+
+
+                <!-- Modal Backdrops -->
+                <div class="modal-backdrop" id="property-backdrop" onclick="closeModal('property')"></div>
+
+                <!-- -----modal---- -->
+                <div class="modal-container" id="property-container">
+                  <div class="modal-wrapper flex_center">
+                    <div class="modal-content">
+                      <div class="modal-header flex_between">
+                        <h2 class="modal-title">Intellectual Property Rights</h2>
+                        <button class="close-button" onclick="closeModal('property')">
+                          <span class="close-icon ">
+                            <img src="./img/cross.svg" alt="close">
+                          </span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="space-y-6">
+                          <div class="section">
+
+                            <p>
+                              At LifeLinkr, we respect and safeguard intellectual property rights for our platform’s
+                              content and that of others. This Intellectual Property Rights Policy outlines the use of
+                              materials on our platform.
+                            </p>
+
+
+                          </div>
+                          <div class="section">
+                            <h3>Ownership of Materials</h3>
+                            <p>
+                              All content on LifeLinkr, including text, graphics, logos, images, software resources, and
+                              educational materials, is owned by LifeLinkr or licensed from third parties and is
+                              protected under copyright and intellectual property laws.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Permitted Use</h3>
+
+                            <p>Users are granted a limited, non-exclusive license to access and use LifeLinkr content
+                              for professional, non-commercial purposes within their clinic operations. Any other use,
+                              including reproduction, modification, distribution, or transmission without prior written
+                              consent, is strictly prohibited.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Protection of Rights</h3>
+                            <p>
+                              We actively protect our intellectual property rights and will take legal action against
+                              unauthorized use or infringement of our materials.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Reporting Infringement</h3>
+                            <p>
+                              If you believe that your intellectual property rights have been infringed by content on
+                              our platform, please contact us at <a href="#">ip@lifelinkr.com</a> to report the issue.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Acknowledgment of Rights</h3>
+                            <p>
+                              By using our services, users acknowledge that all content on LifeLinkr is the proprietary
+                              property of LifeLinkr or its licensors and agree to comply with all intellectual property
+                              laws.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Contact Us</h3>
+                            <p>
+                              For further information on our Intellectual Property Rights Policy, please reach out to us
+                              at <a href="mailto:info@lifelinkr.com">info@lifelinkr.com</a>.
+                            </p>
+                          </div>
+
+                          <div class="section">
+                            <h3>7. Changes to Terms</h3>
+                            <p>
+                              LifeLinkr reserves the right to update or modify these terms at any time without prior
+                              notice. By continuing to use the website after changes are made, you agree to be bound
+                              by
+                              the revised terms.
+                            </p>
+                          </div>
+
+                          <div class="section">
+                            <h3>Contact Us</h3>
+                            <p>
+                              If you have any questions about these terms, please contact us at
+                              <a href="mailto:info@lifelinkr.com.">info@lifelinkr.com</a>
+
+                            </p>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="button-gradient" onclick="closeModal('property')">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ============Cookies policy============= -->
+              <div>
+
+
+                <!-- Modal Backdrops -->
+                <div class="modal-backdrop" id="cookiesPolicy-backdrop" onclick="closeModal('cookiesPolicy')"></div>
+
+                <!-- -----modal---- -->
+                <div class="modal-container" id="cookiesPolicy-container">
+                  <div class="modal-wrapper flex_center">
+                    <div class="modal-content">
+                      <div class="modal-header flex_between">
+                        <h2 class="modal-title">Cookie Policy</h2>
+                        <button class="close-button" onclick="closeModal('cookiesPolicy')">
+                          <span class="close-icon ">
+                            <img src="./img/cross.svg" alt="close">
+                          </span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="space-y-6">
+                          <div class="section">
+
+                            <p>
+                              At LifeLinkr, we use cookies to enhance user experience and analyze site traffic. This
+                              Cookie Policy explains our practices regarding cookies on our platform.
+                            </p>
+
+
+                          </div>
+                          <div class="section">
+                            <h3>Use of Cookies</h3>
+                            <p>
+                              Cookies are small text files placed on your device that help us understand how you
+                              interact with our site and enable specific functionalities. They are used to:
+                            <p>
+                              <strong>&#x2022;</strong> Improve site navigation. <br>
+                              <strong>&#x2022;</strong> Enable secure login to LifeLinkr services. <br>
+                              <strong>&#x2022;</strong> Personalize content based on user preferences. <br>
+                              <strong>&#x2022;</strong> Analyze site usage to refine our services. <br>
+
+                            </p>
+
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>User Control</h3>
+
+                            <p>
+                              You can control the use of cookies at the browser level. By adjusting your browser
+                              settings, you may accept, refuse, or delete cookies. Note that disabling cookies may limit
+                              your access to some features on our platform.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Consent</h3>
+                            <p>
+                              By using our website, you consent to the placement and use of cookies as outlined in this
+                              policy.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Contact Us</h3>
+                            <p>
+                              For more details about our Cookie Policy, please contact us at <a
+                                href="mailto:info@lifelinkr.com">info@lifelinkr.com</a>.
+                            </p>
+                          </div>
+
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="button-gradient" onclick="closeModal('cookiesPolicy')">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- ============Refund policy============= -->
+              <div>
+
+
+                <!-- Modal Backdrops -->
+                <div class="modal-backdrop" id="refundPolicy-backdrop" onclick="closeModal('refundPolicy')"></div>
+
+                <!-- -----modal---- -->
+                <div class="modal-container" id="refundPolicy-container">
+                  <div class="modal-wrapper flex_center">
+                    <div class="modal-content">
+                      <div class="modal-header flex_between">
+                        <h2 class="modal-title">Refund Policy</h2>
+                        <button class="close-button" onclick="closeModal('refundPolicy')">
+                          <span class="close-icon ">
+                            <img src="./img/cross.svg" alt="close">
+                          </span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="space-y-6">
+                          <div class="section">
+
+                            <p>
+                              At LifeLinkr, we strive to deliver the highest quality software solutions. This Refund
+                              Policy clarifies our stance on refunds.
+                            </p>
+
+
+                          </div>
+                          <div class="section">
+                            <h3>No Refunds Policy</h3>
+                            <p>
+                              LifeLinkr does not offer refunds once a service subscription or product has been
+                              purchased. We encourage clients to review all available information and features
+                              thoroughly before making a decision.
+
+
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Exceptional Circumstances</h3>
+
+                            <p>
+                              In exceptional cases, considerations for credits or other compensatory measures may be
+                              assessed individually.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Contact Us</h3>
+                            <p>
+                              For inquiries regarding this policy, please contact us at <a
+                                href="mailto:info@lifelinkr.com">info@lifelinkr.com</a>.
+                            </p>
+                          </div>
+
+
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="button-gradient" onclick="closeModal('refundPolicy')">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ============Contact Information policy============= -->
+              <div>
+
+
+                <!-- Modal Backdrops -->
+                <div class="modal-backdrop" id="contactInfo-backdrop" onclick="closeModal('contactInfo')"></div>
+
+                <!-- -----modal---- -->
+                <div class="modal-container" id="contactInfo-container">
+                  <div class="modal-wrapper flex_center">
+                    <div class="modal-content">
+                      <div class="modal-header flex_between">
+                        <h2 class="modal-title">Contact Information</h2>
+                        <button class="close-button" onclick="closeModal('contactInfo')">
+                          <span class="close-icon ">
+                            <img src="./img/cross.svg" alt="close">
+                          </span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="space-y-6">
+                          <div class="section">
+
+                            <p>
+                              At LifeLinkr, we prioritize open communication with our clients and partners. This Contact
+                              Information policy outlines how you can reach us for any inquiries or support.
+                            </p>
+
+
+                          </div>
+                          <div class="section">
+                            <h3>Contact Methods</h3>
+                            <p>
+                              You can reach us through the following channels:
+                              <br>
+                              <strong>&#x2022; Email:</strong> For general inquiries, please email us at <a
+                                href="mailto:info@lifelinkr.com">info@lifelinkr.com</a>.
+                              <br>
+                              <strong>&#x2022; Phone:</strong> You can call our support team at the provided phone
+                              number during business hours for immediate assistance.
+                              <br>
+                              <strong>&#x2022; Physical Address:</strong> Visit our office for direct support during
+                              working hours. Our address is listed on our website.
+
+
+
+
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Response Time</h3>
+
+                            <p>
+                              We aim to respond to all inquiries within one business day.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Feedback</h3>
+                            <p>
+                              We welcome your feedback and suggestions to enhance our services.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Contact Us</h3>
+                            <p>
+                              For more detailed contact options, please visit our website or refer to our official
+                              correspondence.
+                            </p>
+                          </div>
+
+
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="button-gradient" onclick="closeModal('contactInfo')">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ============Accessibility Statement policy============= -->
+              <div>
+
+
+                <!-- Modal Backdrops -->
+                <div class="modal-backdrop" id="accesibilityPolicy-backdrop" onclick="closeModal('accesibilityPolicy')">
+                </div>
+
+                <!-- -----modal---- -->
+                <div class="modal-container" id="accesibilityPolicy-container">
+                  <div class="modal-wrapper flex_center">
+                    <div class="modal-content">
+                      <div class="modal-header flex_between">
+                        <h2 class="modal-title">Accessibility Statement</h2>
+                        <button class="close-button" onclick="closeModal('accesibilityPolicy')">
+                          <span class="close-icon ">
+                            <img src="./img/cross.svg" alt="close">
+                          </span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="space-y-6">
+                          <div class="section">
+
+                            <p>
+                              At LifeLinkr, we are dedicated to ensuring that our platform is accessible to everyone,
+                              including individuals with disabilities. This Accessibility Statement outlines our efforts
+                              to comply with applicable standards and enhance the usability of our website.
+                            </p>
+
+
+                          </div>
+                          <div class="section">
+                            <h3>Compliance and Standards</h3>
+                            <p>
+                              Our website strives to meet the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA,
+                              ensuring that our content is accessible to a diverse range of individuals with
+                              disabilities.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Continuous Improvement</h3>
+
+                            <p>
+                              We are committed to continually assessing our website to improve accessibility, leveraging
+                              user feedback and technological advancements.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Feedback</h3>
+                            <p>
+                              If you encounter any accessibility barriers on our website, please contact us at <a
+                                href="mailto:info@lifelinkr.com">info@lifelinkr.com</a>. We value your input and aim to
+                              respond promptly to address your concerns.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Contact Us</h3>
+                            <p>
+                              For further information about our accessibility practices or to request assistance, please
+                              reach out via our designated email or visit our website for more contact options.
+                            </p>
+                          </div>
+
+
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="button-gradient" onclick="closeModal('accesibilityPolicy')">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ============Security Policy policy============= -->
+              <div>
+
+
+                <!-- Modal Backdrops -->
+                <div class="modal-backdrop" id="securityPolicy-backdrop" onclick="closeModal('securityPolicy')"></div>
+
+                <!-- -----modal---- -->
+                <div class="modal-container" id="securityPolicy-container">
+                  <div class="modal-wrapper flex_center">
+                    <div class="modal-content">
+                      <div class="modal-header flex_between">
+                        <h2 class="modal-title">Security Policy</h2>
+                        <button class="close-button" onclick="closeModal('securityPolicy')">
+                          <span class="close-icon ">
+                            <img src="./img/cross.svg" alt="close">
+                          </span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="space-y-6">
+                          <div class="section">
+
+                            <p>
+                              At LifeLinkr, ensuring the security of our digital platforms and protecting user data is
+                              our top priority. This Security Policy outlines our strategies and practices for
+                              maintaining a secure environment.
+                            </p>
+
+
+                          </div>
+                          <div class="section">
+                            <h3>Security Measures</h3>
+                            <p>
+                              At LifeLinkr, ensuring the security of our digital platforms and protecting user data is
+                              our top priority. This Security Policy outlines our strategies and practices for
+                              maintaining a secure environment.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Security Measures</h3>
+
+                            <p>
+                              We implement comprehensive security measures, including:
+                              <br>
+
+                              <strong>&#x2022;</strong> Data encryption to safeguard personal and financial information.
+                              <br>
+                              <strong>&#x2022;</strong> Regular security audits and vulnerability assessments.
+                              <br>
+                              <strong>&#x2022;</strong> A secure network architecture with continuous monitoring.
+
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Data Breach Response</h3>
+                            <p>
+                              In the event of a data breach, we will promptly notify affected users and take immediate
+                              steps to mitigate any damage and prevent future occurrences.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Employee Training</h3>
+                            <p>
+                              All employees receive training on best practices for information security and privacy,
+                              ensuring a culture of security within our organization.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Contact Us</h3>
+                            <p>
+                              For any security concerns or questions, please email us at <a
+                                href="mailto:info@lifelinkr.com">info@lifelinkr.com</a>. We are committed to
+                              continuously improving our security practices.
+                            </p>
+                          </div>
+
+
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="button-gradient" onclick="closeModal('securityPolicy')">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <!-- ============GDPR Compliance policy============= -->
+              <div>
+
+
+                <!-- Modal Backdrops -->
+                <div class="modal-backdrop" id="gdprPolicy-backdrop" onclick="closeModal('gdprPolicy')"></div>
+
+                <!-- -----modal---- -->
+                <div class="modal-container" id="gdprPolicy-container">
+                  <div class="modal-wrapper flex_center">
+                    <div class="modal-content">
+                      <div class="modal-header flex_between">
+                        <h2 class="modal-title">GDPR Compliance</h2>
+                        <button class="close-button" onclick="closeModal('gdprPolicy')">
+                          <span class="close-icon ">
+                            <img src="./img/cross.svg" alt="close">
+                          </span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="space-y-6">
+                          <div class="section">
+
+                            <p>
+                              At LifeLinkr, we are committed to protecting the personal data of our users, particularly
+                              those within the European Union. This GDPR Compliance statement outlines our practices in
+                              alignment with the General Data Protection Regulation (GDPR).
+                            </p>
+
+
+                          </div>
+                          <div class="section">
+                            <h3>Data Rights</h3>
+                            <p>
+                              We respect the rights of data subjects under GDPR, including the rights to access,
+                              correct, delete, and port personal data. Users can exercise these rights by contacting us
+                              directly.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Data Processing</h3>
+
+                            <p>
+                              We process personal data lawfully, fairly, and transparently, only collecting data
+                              necessary for specified, explicit, and legitimate purposes.
+
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Data Protection</h3>
+                            <p>
+                              We implement robust technical and organizational measures to ensure data security and
+                              protect against unauthorized or unlawful processing, accidental loss, destruction, or
+                              damage.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Third-Party Processors</h3>
+                            <p>
+                              We use only GDPR-compliant third-party processors to handle personal data, ensuring
+                              adherence to strict data protection standards.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>Contact and Concerns</h3>
+                            <p>
+                              For any questions or concerns about how we handle your data under GDPR, please contact our
+                              Data Protection Officer at <a href="mailto:info@lifelinkr.com">info@lifelinkr.com</a>.
+                            </p>
+                          </div>
+
+
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="button-gradient" onclick="closeModal('gdprPolicy')">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+              <!-- ============privacy policy============= -->
+              <div>
+
+
+                <!-- Modal Backdrops -->
+                <div class="modal-backdrop" id="privacyPolicy-backdrop" onclick="closeModal('privacyPolicy')"></div>
+
+                <!-- -----modal---- -->
+                <div class="modal-container" id="privacyPolicy-container">
+                  <div class="modal-wrapper flex_center">
+                    <div class="modal-content">
+                      <div class="modal-header flex_between">
+                        <h2 class="modal-title">Privacy Policy</h2>
+                        <button class="close-button" onclick="closeModal('privacyPolicy')">
+                          <span class="close-icon ">
+                            <img src="./img/cross.svg" alt="close">
+                          </span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="space-y-6">
+                          <div class="section">
+
+                            <p>
+                              Welcome to LifeLinkr. These Terms and Conditions outline the rules and regulations for
+                              the
+                              use of our website and services.
+                            </p>
+
+                            <p>By accessing this website, we assume you accept these terms in full. Do not continue to
+                              use
+                              LifeLinkr’s website if you do not agree to all the terms and conditions stated here.</p>
+                          </div>
+                          <div class="section">
+                            <h3>1. Use of Our Services</h3>
+                            <p>
+                              By using our services, you agree to comply with all applicable laws and not to use our
+                              platform for any illegal or unauthorized purposes. Any breach of these terms may result
+                              in
+                              the suspension or termination of your access to our services.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>2. Intellectual Property Rights</h3>
+
+                            <p>Unless otherwise stated, LifeLinkr owns the intellectual property rights for all
+                              material
+                              on this website. You may view, download, or print pages from the website for your
+                              personal
+                              use, subject to restrictions set in these terms and conditions. You must not republish,
+                              sell, or redistribute content from this website without explicit permission.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>3. User Accounts</h3>
+                            <p>
+                              To access certain features of our platform, you may need to create an account. You are
+                              responsible for maintaining the confidentiality of your account information and for all
+                              activities that occur under your account. We reserve the right to suspend or terminate
+                              accounts that are found to be in violation of these terms.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>4. Limitation of Liability</h3>
+                            <p>
+                              In no event shall LifeLinkr, its directors, employees, or partners be liable for any
+                              indirect, incidental, or consequential damages arising out of the use of our website or
+                              services.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>5. Termination</h3>
+                            <p>
+                              We may terminate or suspend access to our services immediately, without prior notice or
+                              liability, if you breach any of the terms.
+                            </p>
+                          </div>
+                          <div class="section">
+                            <h3>6. Governing Law</h3>
+                            <p>
+                              These terms and conditions are governed by and construed in accordance with the laws of
+                              India and you submit to the exclusive jurisdiction of the courts located in that region.
+                            </p>
+                          </div>
+
+                          <div class="section">
+                            <h3>7. Changes to Terms</h3>
+                            <p>
+                              LifeLinkr reserves the right to update or modify these terms at any time without prior
+                              notice. By continuing to use the website after changes are made, you agree to be bound
+                              by
+                              the revised terms.
+                            </p>
+                          </div>
+
+                          <div class="section">
+                            <h3>Contact Us</h3>
+                            <p>
+                              If you have any questions about these terms, please contact us at
+                              <a href="mailto:info@lifelinkr.com.">info@lifelinkr.com</a>
+
+                            </p>
+                          </div>
+
+                        </div>
+                      </div>
+                      <div class="modal-footer">
+                        <button class="button-gradient" onclick="closeModal('privacyPolicy')">
+                          Close
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ganesh-ji-img d-flex justify-content-center">
+          <span><img class="ganesh-ji-img" src="./img/ganesh-ji-orange.svg" alt="ganesh-ji"></span>
+        </div>
+      </div>
+
+    </footer>
+    <div class="right-area">
+      <h4 hrf="./">Request Free call back</h4>
+      <form action="mail/mail2.php" method="post" class="form">
+        <input name="mbl_no" type="text" pattern="[6-9][0-9]{9}" placeholder="Enter Your Phone Number" required=""
+          class="input User_Number" style="color: black;">
+        <button name="submit_new" type="submit">  Request Call Back</button>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- 
+    ====================================== 
+              Footer end here
+    ========================================
+     -->
+
+
+
+
+
+</body>
+<script src="./js/script.js"></script>
+<script src="./js/datepicker.js"></script>
+<!-- <script src="./js/razarpay.js"></script> -->
+
+</html>
