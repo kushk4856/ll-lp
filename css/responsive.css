@@ -39,7 +39,12 @@
 
     .Ll-Benefits-Container {
         min-width: 100%;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
+    }
+
+    .schedule-btn {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 
     .benefits_grid_list {
@@ -47,16 +52,22 @@
         margin-top: 13px;
     }
 
+    #hero .btn-get-started {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
     .Benefits-Lists {
         font-size: 14px;
         margin-left: 8px;
     }
 
+    /* 
     #hero .btn-get-started {
         padding: 15px 30px;
         margin-top: 30px;
         margin-bottom: 10px;
-    }
+    } */
 
     .hero-points {
         display: flex;
@@ -430,7 +441,7 @@
         box-shadow: none !important;
         float: right;
     }
-    
+
 
     .register_mobile_detail {
         margin-top: 10px;
@@ -466,21 +477,24 @@
     .desktop-cta {
         display: none !important;
     }
-    #hero .schedule-btn{
+
+    #hero .schedule-btn {
         text-align: center;
     }
 
-    #hero h2{
+    #hero h2 {
         text-align: center;
     }
-    .Ll-Benefits-Container{
+
+    .Ll-Benefits-Container {
         max-width: 100%;
     }
-    .benefits_grid_list {
-        place-items: center;
-    }
 
-    .form_block>div{
+    /* .benefits_grid_list {
+        place-items: center;
+    } */
+
+    .form_block>div {
         margin-bottom: 0px;
     }
 }
@@ -491,6 +505,7 @@
         top: 17px;
         right: 0px;
         border-radius: 0;
+        margin-right: 2px;
     }
 
     .popup_cal_left-panel {
@@ -502,7 +517,7 @@
         padding-bottom: 18px;
     }
 
-  
+
 
     #hero {
         width: 100%;
@@ -529,6 +544,7 @@
         display: flex;
         justify-content: center;
         margin-bottom: 20px;
+        margin-top: 27px;
     }
 
     .form_block>div {
@@ -616,11 +632,11 @@
     }
 
     #hero {
-        padding-top: 20px
+        padding-top: 20px;
     }
 
     #getreport {
-        padding: 30px 0
+        padding: 30px 24px;
     }
 
     .register_tag {
@@ -707,6 +723,11 @@
         margin: 0 auto;
     }
 
+    #hero {
+        padding-bottom: 7px;
+        margin-bottom: 0px;
+    }
+
     #hero .form_block .form-control {
         margin-bottom: 15px;
     }
@@ -769,6 +790,13 @@
     .first-right img {
         width: 75%
     }
+
+    .schedule-btn {
+        margin-bottom: 0;
+        margin-top: 14px;
+    }
+
+
 }
 
 @keyframes slideIn {
@@ -779,4 +807,6 @@
     100% {
         background-color: red
     }
+
+
 }

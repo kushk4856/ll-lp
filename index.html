@@ -245,13 +245,13 @@
             </div>
             <div class="email_field">
               <div class="input_field_row" id="add_guestInput">
-                <label for="name">Guest Email</label>
+                <label for="name">Invitees Email</label>
                 <div id="email-container" class="email-input-container">
-                  <input type="text" name="invities" id="email-input" placeholder="Add Guest Emails"
+                  <input type="text" name="invities" id="email-input" placeholder="Add Invitees Emails"
                     class="email-input" />
                 </div>
               </div>
-              <div class="add_guest">Add Invities Emails</div>
+              <div class="add_guest">Add Invitees Emails</div>
             </div>
             <!-- <div class="message_field">
           <label>Please share anything that will help prepare for our
@@ -324,7 +324,7 @@
       </div>
       <nav id="navbar" class="navbar flex_between">
         <ul>
-          <li class="hide"><a class="nav-link scrollto menu-btn flex_between" href="\">Home</a></li>
+          <li class="hide"><a class="nav-link scrollto menu-btn flex_between" href="#hero">Home</a></li>
           <li class="hide"><a class="nav-link scrollto menu-btn flex_between" href="#choose">Why Choose Us</a></li>
           <li class="hide"><a class="nav-link scrollto menu-btn flex_between" href="#benefits">Benefits</a></li>
           <!-- <li class="hide"><a class="nav-link scrollto menu-btn flex_between" href="#people">Reviews</a></li> -->
@@ -426,8 +426,8 @@
                                   placeholder="Full Name*"
                                   name="name"
                                   required=""
-                                  pattern="^[a-zA-Z\s]+$"
-                                  title="Name should only contain letters and spaces."
+                                
+                                 
                               />
                           </div>
                           <div class="col-lg-6">
@@ -437,7 +437,7 @@
                                   placeholder="Email Address*"
                                   name="email"
                                   required=""
-                                  title="Enter a valid email address."
+                                
                               />
                           </div>
                       </div>
@@ -445,22 +445,22 @@
                           <div class="col-lg-6 col-12">
                               <input
                                   type="text"
-                                  class="form-control User_Number"
+                                  class="form-control  User_Number"
                                   placeholder="Phone Number*"
                                   name="phone"
                                   required=""
                                   pattern="[6-9][0-9]{9}"
-                                  title="Phone number must be 10 digits and start with 6-9."
+                                
                               />
                           </div>
                           <div class="col-lg-6">
                               <input
                                   type="text"
-                                  class="form-control"
+                                  class="form-control  User_Number"
                                   placeholder="WhatsApp Number"
                                   name="whats_num"
                                   pattern="[6-9][0-9]{9}"
-                                  title="WhatsApp number must be 10 digits and start with 6-9."
+                                 
                               />
                           </div>
                       </div>
@@ -485,7 +485,7 @@
                           </div>
                       </div>
 
-                      <button type="button" id="next-btn" class="btn-get-started">Next</button>
+                      <button type="submit" id="next-btn" class="btn-get-started">Next</button>
                   </div>
 
                   <!-- Hidden Fields -->
@@ -539,7 +539,7 @@
                 Healthcare Management</span><br>
               with LifeLinkr
             </div>
-            <form class="form_block" action="mail/mail.php" method="post">
+            <form class="form_block" action="mail/mail7.php" method="post">
               <div class="row  ">
                 <div class=" col-lg-6  mb-3 mb-sm-0">
                   <input type="text" class="form-control" placeholder="Full Name*" name="name" required="">
@@ -613,7 +613,7 @@
         </div>
         <div class="row logo_container">
         <div class="logo-head">
-          <p class="logo_heaging">Trusted  by Many IVF Clinics :</p>
+          <p class="logo_heaging"><span style="color: #16325b; font-weight: 700;">Trusted</span>  by Many IVF Clinics :</p>
         </div>
        
            <div class="slider-container">
@@ -1235,8 +1235,8 @@ Schedule a Free Demo form Section Start
                   <select type="text" class="form-control" placeholder="Currently Using Any Software?*"
                     name="is_using_software" required>
                   <option value="" disabled selected>Currently Using Any Software?*</option>
-                  <option value="">Yes</option>
-                  <option value="">No</option>
+                  <option value="Yes">Yes</option>
+                  <option value="No">No</option>
                 </select>
                 </div>
 

@@ -134,7 +134,7 @@ p {
   margin-left: calc(var(--bs-gutter-x) / -2);
 }
 
-.row > * {
+.row>* {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -473,6 +473,7 @@ div#thumb_0 {
   display: flex;
   align-items: center;
 }
+
 .card-div p {
   margin-bottom: 0;
 }
@@ -1173,7 +1174,7 @@ Schedule a Free Demo form Section Start
     margin-bottom: 25px;
 } */
 
-.form_block > div {
+.form_block>div {
   margin-bottom: 25px;
 }
 
@@ -1188,6 +1189,7 @@ Schedule a Free Demo form Section Start
   border: 2px solid #fff;
   border-radius: 0.75rem;
 }
+
 .form_block select option {
   color: #000;
   border-bottom: 3px sollid #000;
@@ -1452,7 +1454,7 @@ Heading Section End
   text-align: left !important;
 }
 
-.space-y-6 > * + * {
+.space-y-6>*+* {
   margin-top: 1.5rem;
 }
 
@@ -2284,10 +2286,15 @@ Date Picker style end
   color: #0066ff;
   height: 46px;
 }
+
 .popup_cal_disabled {
   opacity: 0.5;
-  pointer-events: none;
+  /* pointer-events: none; */
   cursor: not-allowed;
+}
+
+.popup_cal_disabled img {
+  filter: grayscale(100%) brightness(0%);
 }
 
 .popup_cal_day:hover:not(.popup_cal_disabled) {
@@ -2565,6 +2572,8 @@ Date Picker style end
   line-height: 22px;
 }
 
+
+
 .popupForm input,
 .popupForm textarea,
 .popupForm select {
@@ -2573,30 +2582,67 @@ Date Picker style end
   font-size: 16px;
   line-height: 1.5;
   width: 100%;
-  display: block;
-  box-sizing: border-box;
-  border: 1px solid #e4e2dc;
-  border-radius: 8px;
-  background: #fff;
-  color: #0a2540;
-  outline: none;
-  box-shadow: 0px 0px 0px 1px #b3c5e4;
   color: #848484;
+
+  /* ---  */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* width: 320px; */
+  /* padding: 12px 16px; */
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+  /* color: #333; */
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.popupForm input:hover,
+.popupForm textarea:hover,
+.popupForm select:hover {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #2EC4B6, #00B3FF 20%, #003DA6) border-box;
 }
 
 .popupForm input:focus,
 .popupForm textarea:active,
 .popupForm textarea:focus,
 .popupForm input:active {
-  border-color: #006bff;
+  /* border-color: #006bff;
   box-shadow: none;
-  background: #fff;
+  background: #fff; */
+  outline: none;
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #2EC4B6, #00B3FF 20%, #003DA6) border-box;
 }
 
-/* .popupForm input:active,
+.popupForm input:active,
 .popupForm textarea:active {
-    border: 1px solid #006bff;
-} */
+  /* border: 1px solid #006bff; */
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #2EC4B6, #00B3FF 20%, #003DA6) border-box;
+}
+
+.popupForm input[type="email"]::placeholder,
+.popupForm select::placeholder,
+.popupForm input[type="text"]::placeholder,
+.popupForm textarea::placeholder {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.popupForm select {
+  font-size: 15px;
+  font-weight: 500;
+  appearance: auto;
+}
 
 .form_content {
   display: flex;
@@ -2680,6 +2726,7 @@ Date Picker style end
   padding-left: 5px;
   margin-top: 0;
 }
+
 #stickyDiv {
   padding-bottom: 5px;
 }
@@ -2692,7 +2739,7 @@ Date Picker style end
   outline: none;
   box-shadow: none;
   border: none;
-  box-shadow: 0px 0px 0px 1px #0089c3;
+  /* box-shadow: 0px 0px 0px 1px #0089c3; */
 }
 
 #stickyDiv #email-container input {
@@ -2808,13 +2855,23 @@ Date Picker style end
   width: 100%;
   display: block;
   box-sizing: border-box;
-  box-shadow: 0px 0px 0px 1px #b3c5e4;
-  border: 1px solid #e4e2dc;
+  /* box-shadow: 0px 0px 0px 1px #b3c5e4; */
+  /* border: 1px solid #e4e2dc; */
   border-radius: 8px;
   background: #fff;
   color: #0a2540;
   outline: none;
   display: flex;
+  background: #fff;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: none;
+}
+
+.popUpCalendly #email-container:hover {
+  border: 2px solid transparent;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(90deg, #2EC4B6, #00B3FF 20%, #003DA6) border-box;
 }
 
 /* ====end guest email  */
@@ -2840,6 +2897,7 @@ Date Picker style end
 /* Calendar Grid Styles */
 .popup_cal_calendar {
   padding: 24px;
+  padding-top: 0px;
 }
 
 .popup_cal_month-selector {
@@ -2984,6 +3042,7 @@ Date Picker style end
 .register_form2_mobile {
   display: none;
 }
+
 #hero .register_form2_mobile .form_block .form-control {
   margin-bottom: 0px;
 }
@@ -3000,7 +3059,7 @@ Date Picker style end
 .register_form2 .form_block select::placeholder,
 .register_form2 .form_block input[type="text"]::placeholder,
 .register_form2 .form_block textarea::placeholder {
-  font-size: 14px;
+  font-size: 16px;
 }
 
 .register_form2 .form_block select {
@@ -3012,13 +3071,14 @@ Date Picker style end
   margin-top: 2px;
 }
 
-.register_form2 .form_block > div {
+.register_form2 .form_block>div {
   margin-bottom: 0px;
 }
 
 #hero .register_form2 .form_block {
   margin-top: 18px;
 }
+
 .register_form2 .form_block {
   width: 87%;
 }
@@ -3026,12 +3086,13 @@ Date Picker style end
 #hero .register_form2 .form_block .btn-get-started {
   padding-inline: 16px;
 }
+
 /* ==========form========= */
 
-@media (max-width: 1026px) {
+@media (max-width: 1023px) {
   .popup_cal_scheduler-container {
     grid-template-columns: 1fr;
-    height: 98vh;
+    height: 87vh;
   }
 
   .popup_cal_right-panel {
@@ -3053,6 +3114,7 @@ Date Picker style end
   .register_form2 {
     display: none;
   }
+
   .register_form2_mobile {
     display: block;
   }
@@ -3068,12 +3130,21 @@ Date Picker style end
     /* max-width: 442px; */
     /* margin: auto; */
     height: 98vh;
+    /* overflow-y: scroll; */
+  }
+
+  .right_container_modal {
     overflow-y: scroll;
+  }
+
+  .form_content {
+    gap: 8px;
   }
 
   .hide-in-mbl {
     display: none;
   }
+
   .popup_cal_next-button {
     margin-right: 2px;
   }
@@ -3090,6 +3161,7 @@ Date Picker style end
     border-right: none;
     box-shadow: none;
   }
+
   .popup_cal_scheduler-container {
     max-width: 100%;
   }
@@ -3116,10 +3188,12 @@ Date Picker style end
     left: 0;
     border-radius: unset;
   }
+
   .popup_cal_time-slot-selected {
     padding-inline: 73px;
     padding-inline: 85px;
   }
+
   .close_calendly img {
     margin-left: 2px;
   }
@@ -3329,6 +3403,7 @@ Date Picker style end
   cursor: not-allowed;
   color: #ccc;
 }
+
 .nav-btn:disabled img {
   filter: grayscale(100%) brightness(1000%);
 }
@@ -3338,13 +3413,15 @@ Date Picker style end
   align-items: center;
   margin-top: 25px;
 }
+
 .logo-head {
   width: 25%;
-  p{
+
+  p {
     padding: 0%;
     margin-bottom: 0;
     font-size: larger;
-    
+
   }
 }
 
@@ -3356,31 +3433,36 @@ Date Picker style end
   position: relative;
   padding: 0;
 }
+
 .slider {
   display: flex;
   transition: transform 0.5s linear;
   align-items: center;
   gap: 20px;
 }
+
 .slide-card {
-  flex: 0 0 24%; /* Show 4 cards at a time */
+  flex: 0 0 24%;
+  /* Show 4 cards at a time */
   max-width: 24%;
   background-color: transparent;
   text-align: center;
   display: flex;
   justify-content: center;
+
 }
 
-.slide-card .fix-width{
+.slide-card .fix-width {
   width: 75%;
 }
+
 .slide-card img {
   object-fit: cover;
   width: 100%;
   height: auto;
-   margin: 0;    
-    padding: 0;
-    display: block;
+  margin: 0;
+  padding: 0;
+  display: block;
 }
 
 @media (max-width: 768px) {
@@ -3388,6 +3470,7 @@ Date Picker style end
     display: block;
     text-align: center;
   }
+
   .logo-head {
     width: 100%;
   }
@@ -3411,7 +3494,8 @@ Date Picker style end
   transform: translateX(100%);
   opacity: 0;
   transition: transform 0.5s ease, opacity 0s ease;
-  display: none; /* Ensure it starts hidden */
+  display: none;
+  /* Ensure it starts hidden */
   margin-top: 15px;
 }
 
@@ -3426,12 +3510,12 @@ Date Picker style end
 }
 
 
-.register_form2{
+.register_form2 {
   min-height: 450px;
   position: relative;
 }
 
-#back-btn{
+#back-btn {
   position: fixed;
   top: -65px;
   left: 0;
@@ -3448,11 +3532,29 @@ Date Picker style end
   width: 40px;
 }
 
+.form_block select {
+  appearance: auto;
+}
 
-#initial-fields .row{
+.register_form2 .form_block select {
+  font-size: 15px;
+}
+
+
+#initial-fields .row {
   margin-bottom: 40px !important;
 }
 
-.hero-points {
+/* .hero-points {
   min-width: 166px;
+} */
+
+#hero .register_form2 {
+  overflow: hidden;
+}
+
+@media (min-width: 1024px) {
+  .popup_cal_scheduler-container {
+    height: 87vh;
+  }
 }

@@ -489,6 +489,14 @@ document.addEventListener("DOMContentLoaded", function () {
   
     // Clear existing time slots
     timeSlotContainer.innerHTML = "";
+
+    dateInput.value = selectedDate.toLocaleDateString("en-US", {
+      weekday: "long",
+      month: "long",
+      day: "numeric",
+    });
+
+    console.log(dateInput.value)
   
     // Check if the selected date is today
     const isToday =
@@ -828,15 +836,16 @@ document.addEventListener("DOMContentLoaded", function () {
  let interval;
 
  function startSlider() {
+  
    interval = setInterval(() => {
      slider.style.transition = "transform 0.5s linear";
      console.log(cardWidth);
-     slider.style.transform = `translateX(-${cardWidth}px)`;
+     slider.style.transform = `translateX(-${cardWidth}px) `;
 
      // After the transition ends, rearrange the cards
      setTimeout(() => {
        slider.style.transition = "none";
-      slider.style.transform = "transform 0.5s linear";
+      // slider.style.transform = "transform 0.5s linear";
        slider.style.transform = "translateX(0)";
        slider.appendChild(slider.children[0]); // Move the first card to the end
      }, 500); // Match transition duration
@@ -918,9 +927,9 @@ nextBtn.addEventListener("click", function () {
       }, 50);
     }, 500);
   } else {
-    alert(
-      "Please ensure all required fields are filled and formatted correctly."
-    );
+    // alert(
+    //   "Please ensure all required fields are filled and formatted correctly."
+    // );
   }
 });
 

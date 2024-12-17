@@ -2,7 +2,7 @@
 if (isset($_POST['submit'])) {
 
     // Define recipient email (admins will receive the form data)
-    $email_to = "himanshu.lifelinkr@gmail.com"; // Admin emails
+    $email_to = "himanshu.lifelinkr@gmail.com, kushk4998@gmail.com"; // Admin emails
     $email_subject = "Query from LifeLinkr SL LP (Bottom Form) - Automate Your IVF Clinic";
 
     // Sanitize and assign POST data to variables
