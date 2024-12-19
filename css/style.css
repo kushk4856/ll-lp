@@ -186,7 +186,8 @@ section {
 }
 
 #header {
-  background: #eaeaea;
+  background: #f4f4f4;
+  box-shadow: rgba(0, 0, 0, 0.14) 0px 1px 1px;
   transition: all 0.5s;
   z-index: 10;
   padding: 15px 0;
