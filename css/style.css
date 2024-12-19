@@ -3147,6 +3147,7 @@ Date Picker style end
 
   .right_container_modal {
     overflow-y: scroll;
+    overflow-x: hidden;
   }
 
   .form_content {
