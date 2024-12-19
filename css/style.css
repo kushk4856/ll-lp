@@ -2328,7 +2328,7 @@ Date Picker style end
   flex-direction: column;
   gap: 4px;
   width: 229px;
-  height: 440px;
+  height: 420px;
   overflow: hidden;
   overflow-y: scroll;
   padding-right: 24px;
@@ -3091,7 +3091,7 @@ Date Picker style end
 /* ==========form========= */
 
 
- @media(min-width: 1024){
+ @media(min-width: 1024px){
   .popup_cal_scheduler-container{
     height: 94vh;
   }
@@ -3561,11 +3561,11 @@ Date Picker style end
   overflow: hidden;
 }
 
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .popup_cal_scheduler-container {
     height: 87vh;
   }
-}
+} */
 
 
 
