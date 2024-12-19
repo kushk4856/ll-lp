@@ -176,7 +176,10 @@
                       </div>
                       <div class="time_text">
                           <h4>Oops!</h4>
-                          <p>No Slots are Available.</p>
+                          <p>No Slots are Available <br>
+                            for Today.
+                          </p>
+                       
                       </div>
                   </div>
                   </div>
@@ -1465,17 +1468,19 @@ Header Section  Section End
                         <label>Select Time</label>
                     </div>
                     <div class="time-select-wrapper">
-                        <select id="time-select" required>
-                            <option value="">Select a time</option>
+                        <div id="time-select" required>
+                            <div value="">Select a time</div>
                             <!-- Time slots will be populated by JavaScript -->
-                        </select>
+                             <div class="no_slots_div"></div>
+
+                            
+                             
+                        </div>
+                        
+                       
                     </div>
                     <p class="selected-date"></p>
-                    <button class="confirm-button">
-                        <a class="pay-btn btn-confirm btn-get-started scrollto right_register register-now-track-btn">
-                            Next
-                        </a>
-                    </button>
+                    
                 </div>
             </div>
 

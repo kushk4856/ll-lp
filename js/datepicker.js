@@ -29,6 +29,7 @@ class MeetingScheduler {
     this.sticyForm = document.querySelector(".right_sticky_form");
     this.sticyContainer = document.querySelector(".right_block");
     this.backBtn = document.getElementById("backBtnStickyForm");
+    this.noTimeSlotDiv = document.querySelector(".no_slots_div");
   }
 
   setupEventListeners() {
@@ -178,9 +179,18 @@ class MeetingScheduler {
         startTime.setHours(11, 0, 0, 0);
       }
 
+      if (isToday && startTime >= endTime) {
+        // If today and the current time is beyond the end time
+        this.noTimeSlotDiv.style.display = "flex";
+        this.timeSelector_wrapper.appendChild(this.noTimeSlotDiv);
+        // Exit early as there are no slots to generate
+      } else {
+        this.noTimeSlotDiv.style.display = "none";
+      }
+
       if (startTime >= endTime) {
-        const noTimingsOption = document.createElement("option");
-        noTimingsOption.value = "";
+        const noTimingsOption = document.createElement("div");
+        // noTimingsOption.value = "";
         noTimingsOption.textContent = "No timings available today";
         this.timeSelect.appendChild(noTimingsOption);
       } else {
@@ -200,10 +210,10 @@ class MeetingScheduler {
               .padStart(2, "0")} ${ampm}`;
           }
 
-          const option = document.createElement("option");
-          option.value = timeString;
-          option.textContent = timeString;
-          this.timeSelect.appendChild(option);
+          //   const option = document.createElement("option");
+          //   option.value = timeString;
+          //   option.textContent = timeString;
+          //   this.timeSelect.appendChild(option);
 
           const buttonGroup = document.createElement("div");
           buttonGroup.classList.add("popup_cal_button-group");

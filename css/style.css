@@ -1776,19 +1776,7 @@ Date Picker style start
   -webkit-appearance: none;
 }
 
-.time-select-wrapper::after {
-  content: "";
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 0;
-  height: 0;
-  border-left: 5px solid transparent;
-  border-right: 5px solid transparent;
-  border-top: 5px solid #666;
-  pointer-events: none;
-}
+
 
 .timezone-selector {
   margin-top: 2rem;
@@ -2436,12 +2424,14 @@ Date Picker style end
   height: 20px;
 }
 
-.popup_cal_time-slots-section::-webkit-scrollbar {
+.popup_cal_time-slots-section::-webkit-scrollbar,
+.time-select-wrapper::-webkit-scrollbar {
   width: 12px;
   height: 12px;
 }
 
-.popup_cal_time-slots-section::-webkit-scrollbar-thumb {
+.popup_cal_time-slots-section::-webkit-scrollbar-thumb,
+.time-select-wrapper::-webkit-scrollbar-thumb {
   background-color: #737373;
   border-radius: 6px;
   border: 3px solid #ffffff;
@@ -3033,6 +3023,7 @@ Date Picker style end
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 
 .time_text h4 {
@@ -3598,6 +3589,7 @@ Date Picker style end
 
 .time-selector-container.active {
   right: 0;
+  padding-top: 0px;
 }
 
 .time-selector {
@@ -3667,7 +3659,7 @@ Date Picker style end
 }
 
 .time-select-wrapper {
-  overflow-y: scroll;
+  overflow-y: auto;
   overflow-x: hidden;
   height: 318px;
 }
