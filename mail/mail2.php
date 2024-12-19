@@ -2,9 +2,9 @@
 if(isset($_REQUEST['submit_new'])) 
 {
 // EDIT THE 2 LINES BELOW AS REQUIRED
-// $email_to = "himanshu.lifelinkr@gmail.com, 4exult@gmail.com, gchauhan.dm@gmail.com, rakshitkapur.dm@gmail.com";
-$email_to = "himanshu.lifelinkr@gmail.com, kushk4998@gmail.com";
-$email_subject = "Query from LifeLinkr SL LP (Footer) - Automate Your IVF Clinic";
+$email_to = "4exult@gmail.com, gchauhan.dm@gmail.com, rakshitkapur.dm@gmail.com";
+// $email_to = "himanshu.lifelinkr@gmail.com, kushk4998@gmail.com";
+$email_subject = "Query from LifeLinkr.in LP (Footer)";
 // validation expected data exists
 if(!isset($_POST['mbl_no']))
 {
