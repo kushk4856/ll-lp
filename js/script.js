@@ -560,6 +560,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
       const timeSlotSelected = document.createElement("div");
       timeSlotSelected.classList.add("popup_cal_time-slot-selected");
+      timeSlotSelected.classList.add('right_form_time_slot')
       timeSlotSelected.textContent = timeString;
   
       const nextButton = document.createElement("button");
@@ -569,6 +570,8 @@ document.addEventListener("DOMContentLoaded", function () {
       buttonGroup.appendChild(timeSlotSelected);
       buttonGroup.appendChild(nextButton);
       timeSlotContainer.appendChild(buttonGroup);
+
+
   
       // Increment the time by 30 minutes
       startTime.setMinutes(startTime.getMinutes() + 30);

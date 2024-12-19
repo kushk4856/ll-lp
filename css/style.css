@@ -2788,7 +2788,7 @@ Date Picker style end
   border: none;
   margin-left: 2px;
   width: 98%;
-  appearance: auto;
+  /* appearance: auto; */
   padding-left: 6px;
 }
 
@@ -3095,12 +3095,13 @@ Date Picker style end
 /* ==========form========= */
 
 
- @media(min-width: 1024px){
-  .popup_cal_scheduler-container{
+@media(min-width: 1024px) {
+  .popup_cal_scheduler-container {
     height: 94vh;
   }
-  
- }
+
+}
+
 @media (max-width: 1023px) {
   .popup_cal_scheduler-container {
     grid-template-columns: 1fr;
@@ -3641,11 +3642,11 @@ Date Picker style end
 
 /* Rest of your existing CSS remains unchanged */
 
-.right_sticky_form input{
+.right_sticky_form input {
   margin-bottom: 9px !important;
 }
 
-.right_sticky_form select{
+.right_sticky_form select {
   margin-bottom: 8px !important;
 }
 
@@ -3661,6 +3662,34 @@ Date Picker style end
   color: #0000003b;
 }
 
-.header_innner{
+.header_innner {
   padding-right: 0px;
+}
+
+.time-select-wrapper {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 318px;
+}
+
+.right_block .popup_cal_time-slot-selected {
+  padding: 10px 64px;
+  text-wrap: nowrap;
+}
+
+.right_block .popup_cal_time-slot-selected.active {
+  padding-inline: 13px;
+  background-color: #666;
+  color: #fff;
+  border: 1px solid #666;
+  margin-right: 8px;
+  outline: none;
+}
+
+.right_block .popup_cal_button-group {
+  margin-inline: 2px;
+}
+
+.right_block .selected-date {
+  margin-top: 8px;
 }
