@@ -750,7 +750,7 @@ aside {
 
 .right_block h3 {
   margin: 0;
-  font-size: 23px;
+  font-size: 22px;
   font-weight: 700;
   color: var(--primary-purple);
   font-family: Nunito;
@@ -955,6 +955,7 @@ aside {
   font-size: 20px;
   font-family: Nunito;
   padding-right: 30px;
+  margin-top: 10px;
 }
 
 .Ll-Benefits-Container {
@@ -2774,7 +2775,7 @@ Date Picker style end
 }
 
 .right_sticky_form select {
-  color: #7a7b7d;
+  color: #0000003b;
   font-size: 16px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3089,6 +3090,13 @@ Date Picker style end
 
 /* ==========form========= */
 
+
+ @media(min-width: 1024){
+  .popup_cal_scheduler-container{
+    height: 94vh;
+  }
+  
+ }
 @media (max-width: 1023px) {
   .popup_cal_scheduler-container {
     grid-template-columns: 1fr;
@@ -3557,4 +3565,97 @@ Date Picker style end
   .popup_cal_scheduler-container {
     height: 87vh;
   }
+}
+
+
+
+
+
+/* ---updated-- */
+/* Add these new styles and modify existing ones */
+
+.right-panel {
+  position: relative;
+  overflow: hidden;
+}
+
+.time-selector-container {
+  position: absolute;
+  right: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: all 0.3s ease;
+  padding: 1rem;
+}
+
+.time-selector-container.active {
+  right: 0;
+}
+
+.time-selector {
+  opacity: 1;
+  height: auto;
+  transform: none;
+  transition: none;
+}
+
+.time-selector.show {
+  opacity: 1;
+  height: auto;
+  transform: none;
+}
+
+.calendar.slide-out {
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+/* Keep all existing styles and add these modifications */
+.right_sticky_form {
+  position: absolute;
+  right: -100%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: white;
+  transition: all 0.3s ease;
+  transform: none;
+}
+
+.right_sticky_form.active {
+  right: 0;
+  transform: none;
+}
+
+.right_block {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Rest of your existing CSS remains unchanged */
+
+.right_sticky_form input{
+  margin-bottom: 9px !important;
+}
+
+.right_sticky_form select{
+  margin-bottom: 8px !important;
+}
+
+.right_block .right-panel {
+  height: 410px;
+}
+
+
+/* ----updated-2 */
+
+
+.right_sticky_form input::placeholder {
+  color: #0000003b;
+}
+
+.header_innner{
+  padding-right: 0px;
 }

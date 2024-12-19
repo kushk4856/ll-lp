@@ -305,7 +305,7 @@
 
   <header id="header" class="fixed-top">
 
-    <div class="container flex_between">
+    <div class="container header_innner flex_between " >
       <h3 class="logo">
         <a href="/">
           <img loading="lazy" src="./images/logo.webp" alt="Logo" width="200px" height="75px">
@@ -367,7 +367,7 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-6 pt-4 first_section_container">
-            <h1><strong>Automate Your IVF Clinic</strong></h1>
+            <h1><strong>Accelerate the Growth of Your Clinics</strong></h1>
             <!-- <img src="https://www.abhishekbakshi.in/himanshu/im/img/iv-therapy.jpg" alt="" height="230px"> -->
 
             <h2>Your All-in-One Software for Enhanced IVF Clinic Management and Patient Experience </h2>
@@ -387,6 +387,10 @@
                         src="images/informatics-on-the-go.webp" alt="Info on-the-go"></span>Info on-the-go</div>
                   <div class="hero-points" id="hero-points"><span><img loading="lazy" src="images/migration.webp"
                         alt="Data Transfer"></span>Data Transfer</div>
+                  <div class="hero-points" id="hero-points"><span><img loading="lazy" src="img/tasks (1).png"
+                        alt="Data Transfer"></span>Real-time analytics</div>
+                  <div class="hero-points" id="hero-points"><span><img loading="lazy" width="57" height="57" src="img/tools (1).png"
+                        alt="Data Transfer"></span>Real-time analytics</div>
                 </div>
               </div>
 
@@ -1419,100 +1423,142 @@ Header Section  Section End
 
   <aside>
     <div class="right_block register_desktop" id="stickyDiv" style="position: fixed; top: 95px;">
-      <h3> Schedule Software Demo</h3>
+        <h3>Schedule Software Demo</h3>
 
-      <!--====date picker == -->
-      <div class="right-panel">
-        <div class="header_calender">
-        </div>
-        <div class="calendar">
-          <div class="calendar-header">
-            <div class="month-nav">
-              <button class="nav-btn prev-month"><img src="./images/right-arrow.svg" style="rotate: 180deg;" width="12" height="12"
-                  alt=""></button>
-              <span class="current-month">December 2024</span>
-              <button class="nav-btn next-month"><img src="./images/right-arrow.png" width="12" height="12"
-                  alt=""></button>
+        <!-- Main Container -->
+        <div class="right-panel">
+            <!-- Calendar Section -->
+            <div class="calendar-container">
+                <div class="header_calender"></div>
+                <div class="calendar">
+                    <div class="calendar-header">
+                        <div class="month-nav">
+                            <button class="nav-btn prev-month">
+                                <img src="./images/right-arrow.svg" style="rotate: 180deg;" width="12" height="12" alt="Previous">
+                            </button>
+                            <span class="current-month">December 2024</span>
+                            <button class="nav-btn next-month">
+                                <img src="./images/right-arrow.png" width="12" height="12" alt="Next">
+                            </button>
+                        </div>
+                    </div>
+                    <div class="weekdays">
+                        <span>MON</span>
+                        <span>TUE</span>
+                        <span>WED</span>
+                        <span>THU</span>
+                        <span>FRI</span>
+                        <span>SAT</span>
+                        <span>SUN</span>
+                    </div>
+                    <div class="days">
+                        <!-- Days will be populated by JavaScript -->
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="weekdays">
-            <span>MON</span>
-            <span>TUE</span>
-            <span>WED</span>
-            <span>THU</span>
-            <span>FRI</span>
-            <span>SAT</span>
-            <span>SUN</span>
-          </div>
-          <div class="days"></div>
+
+            <!-- Time Selector Container -->
+            <div class="time-selector-container">
+                <div class="time-selector">
+                    <div class="time-header">
+                        <label>Select Time</label>
+                    </div>
+                    <div class="time-select-wrapper">
+                        <select id="time-select" required>
+                            <option value="">Select a time</option>
+                            <!-- Time slots will be populated by JavaScript -->
+                        </select>
+                    </div>
+                    <p class="selected-date"></p>
+                    <button class="confirm-button">
+                        <a class="pay-btn btn-confirm btn-get-started scrollto right_register register-now-track-btn">
+                            Next
+                        </a>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Form Section -->
+            <form class="right_sticky_form" action="mail/mail5.php" method="post">
+                <!-- Hidden Fields -->
+                <input type="text" name="selected_date" class="selected_date" hidden>
+                <input type="text" name="selected_time" class="selected_time" hidden>
+
+                <!-- Personal Information -->
+                <div class="form-section">
+                    <input type="text" 
+                           class="form-control mb-3" 
+                           placeholder="Name*" 
+                           name="name" 
+                           required>
+
+                    <input type="email" 
+                           class="form-control mb-3" 
+                           placeholder="Email*" 
+                           name="email" 
+                           required>
+
+                    <input type="text" 
+                           class="User_Number form-control mb-3" 
+                           pattern="[6-9][0-9]{9}" 
+                           placeholder="Mobile Number*" 
+                           name="phone" 
+                           required>
+
+                    <input type="text" 
+                           class="form-control mb-3" 
+                           placeholder="Clinic Name*" 
+                           name="clinic_name" 
+                           required>
+
+                    <input type="text" 
+                           class="form-control mb-3" 
+                           placeholder="City" 
+                           name="city">
+
+                    <!-- Software Usage Dropdown -->
+                    <select class="form-control mb-3" 
+                            name="is_using_software" 
+                            required>
+                        <option value="" disabled selected>Currently Using Any Software?</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+
+                    <!-- Additional Information -->
+                    <input type="text" 
+                           class="form-control mb-3" 
+                           placeholder="Share the Problem You're Facing" 
+                           name="message">
+
+                    <!-- Email Invitees Section -->
+                    <div class="form-group">
+                        <div id="email-container" class="email-input-container">
+                            <input type="text" 
+                                   id="email-input" 
+                                   name="invities" 
+                                   placeholder="Add Invitees Emails" 
+                                   class="email-input" />
+                        </div>
+                    </div>
+
+                    <!-- Form Buttons -->
+                    <div class="back-schedule-btns">
+                        <a id="backBtnStickyForm"
+                           class="pay-btn btn-confirm btn-get-started scrollto right_register register-now-track-btn">
+                            Back
+                        </a>
+                        <button type="submit" 
+                                name="submit"
+                                class="pay-btn btn-confirm btn-get-started scrollto right_register register-now-track-btn">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </form>
         </div>
-        <div class="time-selector">
-          <label>Select Time</label>
-
-          <div class="time-select-wrapper">
-            <select id="time-select" required>
-              <option value="">Select a time</option>
-              <option value="1:00PM">1:00 PM</option>
-              <option value="1:30PM">1:30 PM</option>
-              <option value="2:00PM">2:00 PM</option>
-              <option value="2:30PM">2:30 PM</option>
-              <option value="3:00PM">3:00 PM</option>
-              <option value="3:30PM">3:30 PM</option>
-              <option value="4:00PM">4:00 PM</option>
-              <option value="4:30PM">4:30 PM</option>
-            </select>
-          </div>
-          <p class="selected-date"></p>
-
-        </div>
-        <!-- <div class="timezone-selector">
-            <label>Time zone</label>
-            <select id="timezone">
-                <option value="IST">India Standard Time (11:15am)</option>
-            </select>
-        </div> -->
-        <button class="confirm-button">
-          <!-- <button class="btn-confirm">Confirm Meeting</button> -->
-          <a class="pay-btn btn-confirm btn-get-started scrollto right_register register-now-track-btn">
-            Next </a>
-        </button>
-      </div>
-
-      <form class="right_sticky_form" action="mail/mail5.php" method="post">
-        <input type="text" name="selected_date" class="selected_date" hidden>
-        <input type="text" name="selected_time" class="selected_time" hidden>
-        <input type="text" class="form-control mb-3" placeholder="Name*" name="name" required>
-        <input type="email" class="form-control mb-3" placeholder="Email*" name="email" required>
-
-        <input type="text" class="User_Number form-control mb-3" pattern="[6-9][0-9]{9}" placeholder="Mobile Number*" name="phone" required>
-
-        <input type="text" class="form-control mb-3" placeholder="Clinic Name*" name="clinic_name" required>
-        <input type="text" class="form-control mb-3" placeholder="City" name="city">
-        <!-- <input type="text" class="form-control mb-3" placeholder="Currently Using Software" name="is_using_software"> -->
-        <select class="form-control mb-3" name="is_using_software" required>
-          <option value="" disabled selected>Currently Using Any Software?</option>
-          <option value="yes">Yes</option>
-          <option value="no">No</option>
-        </select>
-        
-
-        <input type="text" class="form-control mb-3" placeholder="Share the Problem You’re Facing" name="message">
-        <div class="form-group">
-          <div id="email-container" class="email-input-container">
-            <input type="text" id="email-input" name="invities" placeholder="Add Invitees Emails" class="email-input" />
-          </div>
-        </div>
-        <div class="back-schedule-btns">
-          <a id="backBtnStickyForm"
-            class="pay-btn btn-confirm btn-get-started scrollto right_register register-now-track-btn">
-            Back </a>
-          <button type="submit" name="submit"
-            class="pay-btn btn-confirm btn-get-started scrollto right_register register-now-track-btn">
-            Submit </button>
-        </div>
-      </form>
     </div>
-  </aside>
+</aside>
 
   <!-- cx
     ====================================== 
