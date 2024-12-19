@@ -76,7 +76,7 @@ if (isset($_POST['submit'])) {
     @$email_message .= "UTM Content: " . clean_string($utm_content) . "\n";  // Add utm_content
 
     // Email headers
-    $headers = "From: hello@lifelinkr.com\r\n";
+    $headers = "From: hello@lifelinkr.in\r\n";
     $headers .= 'X-Mailer: PHP/' . phpversion();
 
     // Send email

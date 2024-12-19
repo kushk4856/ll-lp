@@ -2449,6 +2449,7 @@ Date Picker style end
 
 .popup_cal_time-slot-selected {
   padding: 16px;
+
   padding-inline: 70px;
   background: transparent;
   color: #006aff;
@@ -2460,6 +2461,8 @@ Date Picker style end
   margin-right: 22px;
   cursor: pointer;
   font-weight: 500;
+  letter-spacing: 2px;
+  padding: 17px 64px;
 }
 
 .popup_cal_time-slot-selected:hover {

@@ -56,7 +56,7 @@ $email_message .= "UTM Campaign: " . clean_string($utm_campaign) . "\n";
 
 
 // create email headers
-$headers = "From: hello@lifelinkr.com \r\n";
+$headers = "From: hello@lifelinkr.in \r\n";
 //'Reply-To: '.$email_from."\r\n" .
 'X-Mailer: PHP/' . phpversion();
 @mail($email_to, $email_subject, $email_message, $headers); 

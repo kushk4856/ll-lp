@@ -76,7 +76,7 @@ if (isset($_POST['submit'])) {
     ";
 
     // Email headers
-    $headers = "From: hello@lifelinkr.com\r\n";
+    $headers = "From: hello@lifelinkr.in\r\n";
     $headers .= "MIME-Version: 1.0\r\n";
     $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
     $headers .= "X-Mailer: PHP/" . phpversion();
