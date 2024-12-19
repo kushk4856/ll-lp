@@ -30,7 +30,7 @@ class MeetingScheduler {
     this.sticyContainer = document.querySelector(".right_block");
     this.backBtn = document.getElementById("backBtnStickyForm");
     this.timeBackBtn = document.getElementById("time_back_btn");
-    this.noTimeSlotDiv = document.querySelector(".no_slots_div");
+    this.noTimeSlotDiv = document.querySelector(".no_slots_div_sticky");
   }
 
   setupEventListeners() {

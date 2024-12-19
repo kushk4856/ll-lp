@@ -3004,7 +3004,8 @@ Date Picker style end
   color: red;
 }
 
-.no_slots_div {
+.no_slots_div,
+.no_slots_div_sticky {
   display: none;
   align-items: center;
   flex-direction: column;
@@ -3013,7 +3014,8 @@ Date Picker style end
   width: 100%;
 }
 
-.no_slots_div .time_img img {
+.no_slots_div .time_img img,
+.no_slots_div_sticky .time_img img {
   width: 65px;
 }
 
