@@ -29,12 +29,22 @@ class MeetingScheduler {
     this.sticyForm = document.querySelector(".right_sticky_form");
     this.sticyContainer = document.querySelector(".right_block");
     this.backBtn = document.getElementById("backBtnStickyForm");
+    this.timeBackBtn = document.getElementById("time_back_btn");
     this.noTimeSlotDiv = document.querySelector(".no_slots_div");
   }
 
   setupEventListeners() {
     this.prevMonthBtn.addEventListener("click", () => this.previousMonth());
     this.nextMonthBtn.addEventListener("click", () => this.nextMonth());
+
+    this.selectedDateElement.textContent = this.currentDate.toLocaleDateString(
+      "en-US",
+      {
+        weekday: "long",
+        month: "long",
+        day: "numeric",
+      }
+    );
 
     this.timeSelect.addEventListener("change", (e) => {
       const selectedTime = e.target.value;
@@ -45,6 +55,12 @@ class MeetingScheduler {
     });
 
     this.backBtn.addEventListener("click", () => {
+      this.calendar.classList.remove("slide-out");
+      this.timeSelectorContainer.classList.remove("active");
+      this.sticyForm.classList.remove("active");
+      this.selectedDateElement.style.color = "black";
+    });
+    this.timeBackBtn.addEventListener("click", () => {
       this.calendar.classList.remove("slide-out");
       this.timeSelectorContainer.classList.remove("active");
       this.sticyForm.classList.remove("active");
@@ -144,6 +160,14 @@ class MeetingScheduler {
       const today = new Date();
       const selectedDate = new Date(this.selectedDate);
       const isToday = selectedDate.toDateString() === today.toDateString();
+      this.selectedDateElement.textContent = selectedDate.toLocaleDateString(
+        "en-US",
+        {
+          weekday: "long",
+          month: "long",
+          day: "numeric",
+        }
+      );
 
       this.timeSelect.innerHTML = "";
       this.timeSelector_wrapper.innerHTML = "";

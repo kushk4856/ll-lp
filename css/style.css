@@ -3661,7 +3661,7 @@ Date Picker style end
 .time-select-wrapper {
   overflow-y: auto;
   overflow-x: hidden;
-  height: 318px;
+  height: 270px;
 }
 
 .right_block .popup_cal_time-slot-selected {
