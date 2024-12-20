@@ -2745,6 +2745,7 @@ Date Picker style end
   border: none;
   border-radius: 5px;
   outline: none;
+  color: #848484;
 }
 
 .right_sticky_form input {
@@ -2784,6 +2785,7 @@ Date Picker style end
   padding-left: 6px;
 }
 
+
 .right_sticky_form select:focus {
   /* border: 1px solid; 
     border-image: linear-gradient(to right, #2EC4B6, #00B3FF, #003DA6) 1;
@@ -2794,7 +2796,11 @@ Date Picker style end
   box-shadow: none;
   box-shadow: 0px 0px 0px 2px #b3c5e4;
   border: none;
+  /* color: #000; */
+
 }
+
+
 
 /* .right_sticky_form input:before {
     content: "";
@@ -3688,4 +3694,10 @@ Date Picker style end
 
 .right_block .selected-date {
   margin-top: 8px;
+}
+
+.flex_between_col {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }

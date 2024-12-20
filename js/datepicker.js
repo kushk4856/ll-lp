@@ -1,4 +1,5 @@
 // First, let's handle the Meeting Scheduler class
+
 class MeetingScheduler {
   constructor() {
     this.currentDate = new Date();

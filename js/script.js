@@ -1,91 +1,77 @@
-
-
-document.addEventListener('DOMContentLoaded', function () {
-
+document.addEventListener("DOMContentLoaded", function () {
   let count = 0;
-  let Call_Back_NO = document.querySelector('#Call_Back_NO');
-  const onLeaveCard = document.querySelector('.OnLeaveCard');
-  const card = document.querySelector('.Card');
+  let Call_Back_NO = document.querySelector("#Call_Back_NO");
+  const onLeaveCard = document.querySelector(".OnLeaveCard");
+  const card = document.querySelector(".Card");
 
   // Make sure the OnLeaveCard is initially hidden
   onLeaveCard.style.display = "none";
 
   // Listen for mouseleave event at the top of the page (clientY <= 0)
-  document.addEventListener('mouseleave', function (event) {
+  document.addEventListener("mouseleave", function (event) {
     if (event.clientY <= 0 && count === 0) {
-      onLeaveCard.style.display = "flex";  // Show the OnLeaveCard
-      count = 1;  // Prevent showing the card again
+      onLeaveCard.style.display = "flex"; // Show the OnLeaveCard
+      count = 1; // Prevent showing the card again
     }
   });
 
   // When user clicks outside the OnLeaveCard, hide it
-  document.addEventListener('click', function (event) {
-    if (onLeaveCard.style.display !== 'none') {
+  document.addEventListener("click", function (event) {
+    if (onLeaveCard.style.display !== "none") {
       if (!card.contains(event.target)) {
-        onLeaveCard.style.display = 'none';
+        onLeaveCard.style.display = "none";
         count = 1;
       }
     }
   });
 
   // No Thanks button functionality
-  document.querySelector('.No_ThanksBtn').addEventListener('click', (e) => {
+  document.querySelector(".No_ThanksBtn").addEventListener("click", (e) => {
     e.preventDefault();
-    count = 1;  // Prevent the card from showing again
+    count = 1; // Prevent the card from showing again
     onLeaveCard.style.display = "none";
   });
 
   // Form submission - hide OnLeaveCard and increment count
-  Call_Back_NO.addEventListener('submit', (e) => {
+  Call_Back_NO.addEventListener("submit", (e) => {
     // e.preventDefault();  // Uncomment if you want to handle form submission with JS
     count = 1;
     onLeaveCard.style.display = "none";
   });
-
 });
 
-
-
-
-
-//? Number Validation :-- 
-let User_Number = document.querySelectorAll('.User_Number');
-
+//? Number Validation :--
+let User_Number = document.querySelectorAll(".User_Number");
 
 User_Number.forEach((number_field) => {
-  number_field.addEventListener('input', () => {
+  number_field.addEventListener("input", () => {
     if (number_field.validity.patternMismatch) {
-      number_field.setCustomValidity('It seems the number is invalid, Your number must start with 9, 8, 7 or 6 and it must be 10 digits only.');
+      number_field.setCustomValidity(
+        "It seems the number is invalid, Your number must start with 9, 8, 7 or 6 and it must be 10 digits only."
+      );
     } else {
-      number_field.setCustomValidity('');
+      number_field.setCustomValidity("");
     }
   });
 });
 
+//? Read More and less :--
+document.querySelectorAll(".btn-read-more").forEach((link) => {
+  link.addEventListener("click", function () {
+    const hiddenItems = this.closest("ul").querySelectorAll(
+      ".show-hide-remainig"
+    );
 
-//? Read More and less :-- 
-document.querySelectorAll('.btn-read-more').forEach(link => {
-  link.addEventListener('click', function() {
-      const hiddenItems = this.closest('ul').querySelectorAll('.show-hide-remainig');
+    hiddenItems.forEach((item) => {
+      // Toggle the display of the hidden items
+      item.style.display = item.style.display === "none" ? "block" : "none";
+    });
 
-      hiddenItems.forEach(item => {
-          // Toggle the display of the hidden items
-          item.style.display = (item.style.display === 'none') ? 'block' : 'none';
-      });
-
-      // Toggle link text
-      this.textContent = (this.textContent === 'Read More.') ? 'Read Less' : 'Read More.';
+    // Toggle link text
+    this.textContent =
+      this.textContent === "Read More." ? "Read Less" : "Read More.";
   });
 });
-
-
-
-
-
-
-
-
-
 
 /*
  =========================
@@ -383,9 +369,6 @@ const observer = new IntersectionObserver(
 
 observer.observe(whoSection);
 
-
-
-
 /* 
 ========================================
 ? => Mobile Footer will show after scroll 
@@ -403,8 +386,6 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
-
 // ----------custom checkbox--------
 // const checkbox = document.getElementById("checkbox");
 // const checkbox1 = document.getElementById("checkbox1");
@@ -418,42 +399,42 @@ window.addEventListener("scroll", () => {
 //   console.log(e.target);
 // });
 
-
 function validateForm() {
-  var alterNums = document.getElementsByName('whats_num');
+  var alterNums = document.getElementsByName("whats_num");
 
   for (var i = 0; i < alterNums.length; i++) {
-      var alterNum = alterNums[i].value; // Get the value of each input field
+    var alterNum = alterNums[i].value; // Get the value of each input field
 
-      if (alterNum !== "") {
-          var regex = /^[9876]\d{9}$/;
-          if (!regex.test(alterNum)) {
-              alert("It seems the number is invalid. Your number must start with 9, 8, 7, or 6 and it must be 10 digits only.");
-              return false; 
-          }
+    if (alterNum !== "") {
+      var regex = /^[9876]\d{9}$/;
+      if (!regex.test(alterNum)) {
+        alert(
+          "It seems the number is invalid. Your number must start with 9, 8, 7, or 6 and it must be 10 digits only."
+        );
+        return false;
       }
+    }
   }
 
-  return true; 
+  return true;
 }
-
 
 // === POPUP Calendly ====
 
-const popupOpenBtns = document.querySelectorAll('.openModal')
-const calendlyPopup = document.querySelector('.popUpCalendly')
-const calendlyCloseBtn = document.querySelector('.close_calendly')
+const popupOpenBtns = document.querySelectorAll(".openModal");
+const calendlyPopup = document.querySelector(".popUpCalendly");
+const calendlyCloseBtn = document.querySelector(".close_calendly");
 
-popupOpenBtns.forEach((btn)=>{
-  btn.addEventListener('click', ()=>{
-    calendlyPopup.style.display = 'flex';
+popupOpenBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    calendlyPopup.style.display = "flex";
     // document.body.style.overflow = 'hidden';
-  })
-})
+  });
+});
 
-calendlyCloseBtn.addEventListener('click', ()=>{
-  calendlyPopup.style.display = 'none'
-})
+calendlyCloseBtn.addEventListener("click", () => {
+  calendlyPopup.style.display = "none";
+});
 
 document.addEventListener("DOMContentLoaded", function () {
   // DOM Elements
@@ -466,7 +447,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const selectedDateDisplay = document.querySelectorAll(
     ".popup_cal_selected-date"
   );
-  const timeSlotContainer = document.querySelector('.popup_cal_time-slots-section');
+  const timeSlotContainer = document.querySelector(
+    ".popup_cal_time-slots-section"
+  );
   const timeDisplay = document.querySelector(".time_display");
   const calenderArea = document.querySelector(".popup_cal_right-panel");
   const nextBtns = document.querySelectorAll(".popup_cal_next-button");
@@ -474,10 +457,9 @@ document.addEventListener("DOMContentLoaded", function () {
   const previousBtn = document.querySelector(".previous_btn_popup");
   const addGuestBtn = document.querySelector(".add_guest");
   const addGuestInput = document.getElementById("add_guestInput");
-  const dateInput = document.querySelector('.selected_date_Input');
-  const timeInput = document.querySelector('.selected_time_Input');
-  const noTimeSlotDiv = document.querySelector('.no_slots_div')
-
+  const dateInput = document.querySelector(".selected_date_Input");
+  const timeInput = document.querySelector(".selected_time_Input");
+  const noTimeSlotDiv = document.querySelector(".no_slots_div");
 
   // ====== Dynamic Time Slots Generation ======
   function generateDynamicTimeSlots(selectedDate) {
@@ -486,7 +468,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const endTime = new Date(selected);
     endTime.setHours(19, 0, 0, 0); // End at 12:00 PM
     let currentTime = new Date(now);
-  
+
     // Clear existing time slots
     timeSlotContainer.innerHTML = "";
 
@@ -496,14 +478,14 @@ document.addEventListener("DOMContentLoaded", function () {
       day: "numeric",
     });
 
-    console.log(dateInput.value)
-  
+    console.log(dateInput.value);
+
     // Check if the selected date is today
     const isToday =
       selected.getDate() === now.getDate() &&
       selected.getMonth() === now.getMonth() &&
       selected.getFullYear() === now.getFullYear();
-  
+
     if (isToday && currentTime >= endTime) {
       // If today and the current time is beyond the end time
       noTimeSlotDiv.style.display = "flex";
@@ -512,9 +494,9 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
       noTimeSlotDiv.style.display = "none";
     }
-  
+
     let startTime;
-  
+
     // Determine the start time based on today's or a future date
     if (isToday) {
       // Get the current time
@@ -542,45 +524,44 @@ document.addEventListener("DOMContentLoaded", function () {
       startTime.setHours(11, 0, 0, 0);
     }
 
-    
     // Generate time slots in 30-minute intervals
     while (startTime <= endTime) {
       let hours = startTime.getHours() % 12 || 12; // Convert to 12-hour format
       let minutes = startTime.getMinutes().toString().padStart(2, "0");
       const ampm = startTime.getHours() >= 12 ? "PM" : "AM";
-  
+
       // Add a leading zero if the hour is a single digit
       hours = hours < 10 ? `0${hours}` : hours;
-  
+
       const timeString = `${hours}:${minutes}${ampm}`;
-  
+
       // Create time slot elements
       const buttonGroup = document.createElement("div");
       buttonGroup.classList.add("popup_cal_button-group");
-  
+
       const timeSlotSelected = document.createElement("div");
       timeSlotSelected.classList.add("popup_cal_time-slot-selected");
-      timeSlotSelected.classList.add('right_form_time_slot')
+      timeSlotSelected.classList.add("right_form_time_slot");
       timeSlotSelected.textContent = timeString;
-  
+
       const nextButton = document.createElement("button");
       nextButton.classList.add("popup_cal_next-button");
       nextButton.textContent = "Next";
-  
+
       buttonGroup.appendChild(timeSlotSelected);
       buttonGroup.appendChild(nextButton);
       timeSlotContainer.appendChild(buttonGroup);
 
-
-  
       // Increment the time by 30 minutes
       startTime.setMinutes(startTime.getMinutes() + 30);
     }
-  
+
     // Reattach event listeners to the new time slots
-    const timeSelectedBtns = document.querySelectorAll(".popup_cal_time-slot-selected");
+    const timeSelectedBtns = document.querySelectorAll(
+      ".popup_cal_time-slot-selected"
+    );
     const nextBtns = document.querySelectorAll(".popup_cal_next-button");
-  
+
     timeSelectedBtns.forEach((btn) => {
       btn.addEventListener("click", function () {
         timeSelectedBtns.forEach((button) => button.classList.remove("active"));
@@ -589,7 +570,7 @@ document.addEventListener("DOMContentLoaded", function () {
         timeInput.value = `${btn.textContent}`;
       });
     });
-  
+
     nextBtns.forEach((btn) => {
       btn.addEventListener("click", () => {
         calenderArea.style.display = "none";
@@ -598,7 +579,6 @@ document.addEventListener("DOMContentLoaded", function () {
       });
     });
   }
-  
 
   // ====== Navigation Buttons ======
   nextBtns.forEach((btn) => {
@@ -610,7 +590,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // selectedDateDisplay.forEach((el, i) => {
       //   if (i === 0) {
       //     dateInput.value = `${el.textContent}`;
-         
+
       //   }
       // });
     });
@@ -640,8 +620,18 @@ document.addEventListener("DOMContentLoaded", function () {
   let currentMonth = today.getMonth();
   let currentYear = today.getFullYear();
   const months = [
-    "January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
   ];
 
   // ====== Render Calendar ======
@@ -664,8 +654,6 @@ document.addEventListener("DOMContentLoaded", function () {
       prevMonthBtn.disabled = false;
       prevMonthBtn.classList.remove("popup_cal_disabled");
     }
-
-
 
     // Add empty slots for days before the first of the month
     for (let i = 0; i < (firstDayOfMonth + 6) % 7; i++) {
@@ -705,8 +693,8 @@ document.addEventListener("DOMContentLoaded", function () {
             month: "long",
             day: "numeric",
           });
-       
-          console.log(dateInput.value)
+
+          console.log(dateInput.value);
 
           selectedDateDisplay.forEach((display) => {
             display.textContent = selectedDate.toLocaleDateString("en-US", {
@@ -770,8 +758,6 @@ document.addEventListener("DOMContentLoaded", function () {
   renderCalendar();
 });
 
-
-
 // ====== Guest Email Management ======
 // const emailInput = document.getElementById("email-input");
 // const emailContainer = document.getElementById("email-container");
@@ -825,45 +811,35 @@ document.addEventListener("DOMContentLoaded", function () {
 //     emailInput.value = emailList.join(", "); // Set comma-separated emails in the input field
 // }
 
+const slider = document.getElementById("slider");
+let cardWidth = slider.children[0].offsetWidth + 20; // Width of each card including margin
 
+let intervalSpeed = 2000; // Interval speed in ms
+let interval;
 
+function startSlider() {
+  interval = setInterval(() => {
+    slider.style.transition = "transform 0.5s linear";
+    console.log(cardWidth);
+    slider.style.transform = `translateX(-${cardWidth}px) `;
 
-
-
-
-
- const slider = document.getElementById("slider");
- let cardWidth = slider.children[0].offsetWidth + 20; // Width of each card including margin
- 
- let intervalSpeed = 2000; // Interval speed in ms
- let interval;
-
- function startSlider() {
-  
-   interval = setInterval(() => {
-     slider.style.transition = "transform 0.5s linear";
-     console.log(cardWidth);
-     slider.style.transform = `translateX(-${cardWidth}px) `;
-
-     // After the transition ends, rearrange the cards
-     setTimeout(() => {
-       slider.style.transition = "none";
+    // After the transition ends, rearrange the cards
+    setTimeout(() => {
+      slider.style.transition = "none";
       // slider.style.transform = "transform 0.5s linear";
-       slider.style.transform = "translateX(0)";
-       slider.appendChild(slider.children[0]); // Move the first card to the end
-     }, 500); // Match transition duration
-   }, intervalSpeed);
- }
+      slider.style.transform = "translateX(0)";
+      slider.appendChild(slider.children[0]); // Move the first card to the end
+    }, 500); // Match transition duration
+  }, intervalSpeed);
+}
 
- startSlider();
-
-
+startSlider();
 
 // TOP Form Validation
-const backBtn = document.getElementById('back-btn');
+const backBtn = document.getElementById("back-btn");
 const nextBtn = document.getElementById("next-btn");
 
-backBtn.addEventListener('click', () => {
+backBtn.addEventListener("click", () => {
   const initialSection = document.getElementById("initial-fields");
   const additionalSection = document.getElementById("additional-fields");
 
@@ -936,3 +912,13 @@ nextBtn.addEventListener("click", function () {
   }
 });
 
+// const rightSelect = document.getElementById("right_select");
+// const rightOptions = document.querySelectorAll(".right_options");
+
+// // console.log();
+
+// rightOptions.forEach((opt) => {
+//   opt.addEventListener("click", () => {
+//     console.log(rightSelect);
+//   });
+// });
