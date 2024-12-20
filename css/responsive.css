@@ -304,6 +304,14 @@
     .register_mobile {
         display: none !important
     }
+
+    #hero h1 {
+        max-width: 555px;
+    }
+
+    #hero h2 {
+        max-width: 500px;
+    }
 }
 
 @media (min-width:1200px) {
