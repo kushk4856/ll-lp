@@ -285,6 +285,7 @@
     #stickyDiv {
         display: block !important;
         max-height: 570px;
+        max-width: 305px;
         /* overflow-y: scroll; */
     }
 
@@ -505,7 +506,7 @@
         top: 17px;
         right: 0px;
         border-radius: 0;
-        margin-right: 2px;
+        margin-right: 10px;
     }
 
     .popup_cal_left-panel {

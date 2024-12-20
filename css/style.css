@@ -750,6 +750,7 @@ aside {
 }
 
 .right_block h3 {
+  text-align: center;
   margin: 0;
   font-size: 22px;
   font-weight: 700;
