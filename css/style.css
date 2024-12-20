@@ -1205,7 +1205,7 @@ Schedule a Free Demo form Section Start
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-  color: #212529;
+  color: #848484;
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
@@ -1362,7 +1362,7 @@ Heading Section Start
 .heading-section ul li {
   line-height: 25px;
   color: #707070;
-  font-size: 16px;
+  font-size: 14px;
   margin-bottom: 0 !important;
 }
 
@@ -2597,18 +2597,19 @@ Date Picker style end
   transition: all 0.3s ease-in-out;
 }
 
-.popupForm input:hover,
+/* .popupForm input:hover,
 .popupForm textarea:hover,
 .popupForm select:hover {
   border: 2px solid transparent;
   background: linear-gradient(white, white) padding-box,
     linear-gradient(90deg, #2EC4B6, #00B3FF 20%, #003DA6) border-box;
-}
+} */
 
 .popupForm input:focus,
 .popupForm textarea:active,
 .popupForm textarea:focus,
-.popupForm input:active {
+.popupForm input:active,
+.popupForm select:focus {
   /* border-color: #006bff;
   box-shadow: none;
   background: #fff; */
@@ -2735,7 +2736,7 @@ Date Picker style end
   outline: none;
   box-shadow: none;
   border: none;
-  /* box-shadow: 0px 0px 0px 1px #0089c3; */
+  box-shadow: 0px 0px 0px 1px #0089c3;
 }
 
 #stickyDiv #email-container input {
@@ -2770,7 +2771,7 @@ Date Picker style end
 }
 
 .right_sticky_form select {
-  color: #0000003b;
+  color: #848484;
   font-size: 16px;
   padding-top: 4px;
   padding-bottom: 4px;
@@ -3654,7 +3655,7 @@ Date Picker style end
 
 
 .right_sticky_form input::placeholder {
-  color: #0000003b;
+  color: #848484 !important;
 }
 
 .header_innner {
