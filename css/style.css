@@ -1558,7 +1558,7 @@ Heading Section End
   display: flex;
   justify-content: center;
   gap: 18px;
-  margin: 30px 100px;
+  margin: 30px 56px;
 }
 
 .OnLeaveCard .Card .no_thanks_btn {
@@ -1582,6 +1582,7 @@ Heading Section End
   width: 16rem;
   padding: 2px 8px;
   border-radius: 3px;
+  min-width: 347px;
 }
 
 .OnLeaveCard .Card .input button {
@@ -1594,6 +1595,7 @@ Heading Section End
   font-size: 0.9rem;
   padding-bottom: 9px;
   width: 100%;
+  cursor: pointer;
 }
 
 .OnLeaveCard .Card .no_thanks_btn button a {
