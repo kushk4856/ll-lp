@@ -281,13 +281,19 @@
 
   <div class="OnLeaveCard">
     <div class="Card">
+      <div class="popup_img">
+        <img class="popupImg" src="./images/Meta Creative v5 (approved).png" alt="">
+      </div>
       <div class="heading">
         Schedule a Free Call Back
       </div>
+     
       <div class="input">
         <form action="mail/mail3.php" method="post" id="Call_Back_NO" class="form">
+          <input type="text" name="name" placeholder="Enter Your name">
           <input type="text" name="mbl_no2" class="User_Number" placeholder="Enter Your Phone Number" pattern="[6-9][0-9]{9}" required=""
             fdprocessedid="trb66n">
+         
           <button class="Call_MeBtn" name="submit_new2" type="submit" fdprocessedid="yewyte">CALL ME BACK</button>
         </form>
       </div>
@@ -1311,11 +1317,11 @@ Detail section Section Start
                     <li>
                       <p>Centralizes patient data, lab records, treatment cycles, and financial information.</p>
                     </li>
-                    <span class="show-hide-remainig" style="display: none;">
+                    
                     <li>
                       <p>Designed specifically for fertility clinics, making critical information easily accessible.</p>
                     </li>
-                  </span>
+               
                   </span>
                   <span class="show-hide-remainig" style="display: none;">
 
@@ -1355,12 +1361,12 @@ Detail section Section Start
                     <li>
                       <p>Includes HR, payroll, accounting, bank reconciliation, and inventory management tools.</p>
                     </li>
-                    <span class="show-hide-remainig" style="display: none;">
+                   
                     <li>
                       <p>Provides comprehensive solutions for billing, patient management, pharmacy tracking, and
                         bookkeeping.</p>
                     </li>
-                    </span>
+                  
                   </span>
                   <span class="show-hide-remainig" style="display: none;">
 
@@ -2867,8 +2873,17 @@ Header Section  Section End
     <div class="right-area">
       <h4 hrf="./">Request Free call back</h4>
       <form action="mail/mail2.php" method="post" class="form">
-        <input name="mbl_no" type="text" pattern="[6-9][0-9]{9}" placeholder="Enter Your Phone Number" required=""
+       <div class="row footer_form_row">
+        <div class="col-lg-6">
+          <input name="mbl_no" type="text"  placeholder="Enter Your Name" required=""
           class="input User_Number" style="color: black;">
+        </div>
+        <div class="col-lg-6">
+          <input name="mbl_no" type="text" pattern="[6-9][0-9]{9}" placeholder="Phone Number" required=""
+          class="input User_Number" style="color: black;">
+        </div>
+        
+       </div>
         <button name="submit_new" type="submit">  Request Call Back</button>
       </form>
     </div>
