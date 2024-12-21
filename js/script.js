@@ -478,7 +478,7 @@ document.addEventListener("DOMContentLoaded", function () {
       day: "numeric",
     });
 
-    console.log(dateInput.value);
+    // console.log(dateInput.value);
 
     // Check if the selected date is today
     const isToday =
@@ -610,9 +610,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // ====== Display Current Date ======
   const currentDate = new Date();
-  const options = { weekday: "long", month: "long", day: "numeric" };
+  const options = { weekday: "long", month: "short", day: "numeric",  year: "numeric" };
   selectedDateDisplay.forEach((el) => {
-    el.textContent = currentDate.toLocaleDateString("en-US", options);
+    el.textContent = currentDate.toLocaleDateString("en-IN", options);
+    console.log( currentDate.toLocaleDateString("en-IN", options))
   });
 
   // ====== Calendar Variables ======
@@ -697,10 +698,11 @@ document.addEventListener("DOMContentLoaded", function () {
           console.log(dateInput.value);
 
           selectedDateDisplay.forEach((display) => {
-            display.textContent = selectedDate.toLocaleDateString("en-US", {
+            display.textContent = selectedDate.toLocaleDateString("en-IN", {
               weekday: "long",
-              month: "long",
+              month: "short",
               day: "numeric",
+              year: "numeric"
             });
           });
 
@@ -721,10 +723,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Set the selected date display to today's date
         selectedDateDisplay.forEach((display) => {
-          display.textContent = today.toLocaleDateString("en-US", {
+          display.textContent = today.toLocaleDateString("en-IN", {
             weekday: "long",
-            month: "long",
+            month: "short",
             day: "numeric",
+            year: "numeric"
           });
         });
 

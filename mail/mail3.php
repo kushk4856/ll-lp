@@ -12,6 +12,7 @@ die('We are sorry, but there appears to be a problem with the form you submitted
 }
 
 $mblno =$_POST['mbl_no2']; // required
+$username =$_POST['user_name']; // required
 
 
     // Retrieve the full URL of the referring page
@@ -45,6 +46,7 @@ return str_replace($bad,"",$string);
 }
 
 $ip = $_SERVER['REMOTE_ADDR'];
+@$email_message .= "User: ".clean_string($username)."\n";
 @$email_message .= "Mobile: ".clean_string($mblno)."\n";
 @$email_message .= "IP: ".clean_string($ip)."\n";
 $email_message .= "Full URL: " . clean_string($full_url) . "\n";
@@ -187,15 +189,14 @@ h1{
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-K3MZPQ8T');</script>
+})(window,document,'script','dataLayer','GTM-KCVQJS23');</script>
 <!-- End Google Tag Manager -->
 
 
 <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K3MZPQ8T"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KCVQJS23"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
-
 
 
 <script>

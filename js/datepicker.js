@@ -39,11 +39,12 @@ class MeetingScheduler {
     this.nextMonthBtn.addEventListener("click", () => this.nextMonth());
 
     this.selectedDateElement.textContent = this.currentDate.toLocaleDateString(
-      "en-US",
+      "en-In",
       {
         weekday: "long",
-        month: "long",
+        month: "short",
         day: "numeric",
+        year: "numeric"
       }
     );
 
@@ -162,11 +163,12 @@ class MeetingScheduler {
       const selectedDate = new Date(this.selectedDate);
       const isToday = selectedDate.toDateString() === today.toDateString();
       this.selectedDateElement.textContent = selectedDate.toLocaleDateString(
-        "en-US",
+        "en-IN",
         {
           weekday: "long",
-          month: "long",
+          month: "short",
           day: "numeric",
+          year: 'numeric'
         }
       );
 

@@ -867,20 +867,27 @@ aside {
 }
 
 #footer {
-  background: #ebebeb;
+  /* background: #ebebeb; */
+  background: #fff;
   padding: 0;
   color: #444;
   font-size: 14px;
   padding: 0px 0 0px;
   margin-bottom: -2px;
-  max-width: 730px;
+  padding-block: 24px;
+  /* max-width: 730px; */
 }
 
-#footer p {
+#footer span {
   color: #919191;
   font-size: 15px;
   font-family: Nunito;
   font-weight: 400;
+}
+
+.footer-links {
+  max-width: 1020px;
+  margin: auto;
 }
 
 .footer-links a {
@@ -937,7 +944,7 @@ aside {
   /* background: #0c63e4; */
   background: linear-gradient(to right, #009bdc 0, #0041c3 100%);
   font-family: Nunito;
-  margin-top: 15px;
+  /* margin-top: 15px; */
   padding: 10px;
   font-size: 16px;
   border: none;
@@ -3715,4 +3722,151 @@ Date Picker style end
   align-items: center;
   justify-content: center;
   gap: 8px;
+}
+
+.right-area form {
+  display: flex;
+  flex-direction: column;
+  /* gap: 15px; */
+}
+
+
+/* =====custom footer=== */
+.content_area {
+  width: 100%;
+  background-color: #F2eFea;
+  display: flex;
+  margin-top: 60px;
+  justify-content: space-evenly;
+  gap: 40px;
+  /* flex-wrap: wrap; */
+}
+
+.left-area {
+  width: 320px;
+}
+
+.left-area .image {
+  width: 100%;
+  margin-top: 0px;
+}
+
+
+.left-area p {
+  color: #707070;
+  font-size: 16px;
+  font-family: Nunito;
+  margin-left: 0px;
+  margin-top: 0px;
+  font-weight: 400;
+
+
+}
+
+.center-area {
+  padding-bottom: 10px;
+}
+
+.content_area h4 {
+  color: #444444;
+  margin-top: 20px;
+  font-size: 24px;
+  font-family: Nunito;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.center-area .address {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.center-area .address div {
+  display: flex;
+  align-items: center;
+  width: 310px;
+  gap: 20px;
+}
+
+.center-area .address div i {
+  font-size: xx-large;
+  color: #090808;
+}
+
+.center-area .address div li {
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+
+.center-area .address div li h5 {
+  margin-bottom: 1px;
+  font-size: 20px;
+  font-family: Nunito;
+  color: #444444;
+}
+
+.center-area .address div li p {
+  color: #707070;
+  font-size: 15px;
+  font-family: Nunito;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.center-area .address a {
+  font-weight: 500;
+  color: #007BFF;
+}
+
+.right-area {
+  width: 407px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.content_area h4 {
+  color: #444444;
+  margin-top: 15px;
+  font-size: 24px;
+  font-family: Nunito;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.right-area .input {
+  width: 100% !important;
+  box-sizing: border-box;
+  height: 45px;
+  padding: 0.5rem;
+  font-family: Nunito;
+  font-size: 18px;
+  background-color: #fff;
+  font-weight: 500;
+  border: 2px solid #707070;
+  border-radius: 2px;
+  color: #000;
+  font-family: Nunito;
+  font-size: 16px;
+}
+
+.right-area button {
+  width: 100%;
+
+  background:linear-gradient(to right, #009bdc 0, #0041c3 100%);
+  font-family: Nunito;
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  /* outline: none; */
+  color: white;
+  cursor: pointer;
+}
+
+.right-area button:hover {
+  background-color: #815433;
 }

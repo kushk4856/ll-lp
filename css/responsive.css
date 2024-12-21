@@ -686,8 +686,9 @@
 
     .content_area {
         padding-inline: 120px;
-        flex-direction: column-reverse;
-        margin-bottom: 55px;
+        flex-direction: column;
+        align-items: center;
+        /* margin-bottom: 55px; */
     }
 
     .content_area h4 {
@@ -697,6 +698,15 @@
 
     .left-area {
         width: 100%
+    }
+    .left-area {
+        width: 100%;
+        display: flex
+;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 
     .left-area p {
@@ -806,6 +816,13 @@
     }
     .footer_form_row{
         gap: 10px;
+      }
+
+   
+      #footer {
+        margin-bottom: 90px;
+
+        background: #fff;
       }
 
 }
